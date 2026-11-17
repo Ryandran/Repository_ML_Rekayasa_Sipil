@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Bab 6 - Praktik Regresi" description="Pilih marshall_regression.csv, tetapkan stability_kN sebagai target dan mix_id sebagai metadata, lalu bandingkan learner regresi.">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(80, 210)" />
+		<node id="1" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns" position="(300, 210)" />
+		<node id="2" name="Linear Regression" qualified_name="Orange.widgets.model.owlinearregression.OWLinearRegression" project_name="Orange3" version="" title="Linear Regression" position="(540, 55)" />
+		<node id="3" name="Tree" qualified_name="Orange.widgets.model.owtree.OWTreeLearner" project_name="Orange3" version="" title="Tree" position="(540, 185)" />
+		<node id="4" name="Random Forest" qualified_name="Orange.widgets.model.owrandomforest.OWRandomForest" project_name="Orange3" version="" title="Random Forest" position="(540, 315)" />
+		<node id="5" name="Test and Score" qualified_name="Orange.widgets.evaluate.owtestandscore.OWTestAndScore" project_name="Orange3" version="" title="Test and Score" position="(800, 210)" />
+		<node id="6" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(300, 405)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="1" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="train_data" />
+		<link id="2" source_node_id="2" sink_node_id="5" source_channel="Learner" sink_channel="Learner" enabled="true" source_channel_id="learner" sink_channel_id="learner" />
+		<link id="3" source_node_id="3" sink_node_id="5" source_channel="Learner" sink_channel="Learner" enabled="true" source_channel_id="learner" sink_channel_id="learner" />
+		<link id="4" source_node_id="4" sink_node_id="5" source_channel="Learner" sink_channel="Learner" enabled="true" source_channel_id="learner" sink_channel_id="learner" />
+		<link id="5" source_node_id="1" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="1" format="pickle">gASVRQIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUTowSdXNlX2lucHV0X2ZlYXR1
+cmVzlImMC19fdmVyc2lvbl9flEsBjBBjb250ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3aWRnZXQu
+c2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21haW5fcm9sZV9oaW50
+c5R9lCiMCmJpbmRlcl9wY3SUSwKGlIwJYXR0cmlidXRllEsAhpSMDGFpcl92b2lkX3BjdJRLAoaU
+aBRLAYaUjAd2bWFfcGN0lEsChpRoFEsChpSMFWFnZ3JlZ2F0ZV9zaGFwZV9pbmRleJRLAoaUaBRL
+A4aUjA9ncmFkYXRpb25faW5kZXiUSwKGlGgUSwSGlIwMc3RhYmlsaXR5X2tOlEsChpSMBWNsYXNz
+lEsAhpSMBm1peF9pZJRLA4aUjARtZXRhlEsAhpR1Sv7///+GlGgGSwF1jAphdHRyaWJ1dGVzlH2U
+KIwKYmluZGVyX3BjdJRLAowMYWlyX3ZvaWRfcGN0lEsCjAd2bWFfcGN0lEsCjBVhZ2dyZWdhdGVf
+c2hhcGVfaW5kZXiUSwKMD2dyYWRhdGlvbl9pbmRleJRLAowMc3RhYmlsaXR5X2tOlEsCdYwFbWV0
+YXOUfZSMBm1peF9pZJRLA3N1YmF1Lg==
+</properties>
+		<properties node_id="2" format="literal">{'alpha_index': 0, 'auto_apply': True, 'autosend': True, 'controlAreaVisible': True, 'fit_intercept': True, 'l2_ratio': 0.5, 'learner_name': '', 'reg_type': 0, 'ridge': False, 'savedWidgetGeometry': None, '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'auto_apply': True, 'binary_trees': True, 'controlAreaVisible': True, 'learner_name': '', 'limit_depth': True, 'limit_majority': True, 'limit_min_internal': True, 'limit_min_leaf': True, 'max_depth': 100, 'min_internal': 5, 'min_leaf': 2, 'savedWidgetGeometry': None, 'sufficient_majority': 95, '__version__': 1}</properties>
+		<properties node_id="4" format="literal">{'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'index_output': 0, 'learner_name': '', 'max_depth': 3, 'max_features': 5, 'min_samples_split': 5, 'n_estimators': 10, 'savedWidgetGeometry': None, 'use_max_depth': False, 'use_max_features': False, 'use_min_samples_split': True, 'use_random_state': False, '__version__': 1}</properties>
+		<properties node_id="5" format="pickle">gASVkAMAAAAAAAB9lCiMFGNvbXBhcmlzb25fY3JpdGVyaW9ulEsAjBJjb250cm9sQXJlYVZpc2li
+bGWUiIwNY3Zfc3RyYXRpZmllZJSIjAduX2ZvbGRzlEsCjAluX3JlcGVhdHOUSwOMCnJlc2FtcGxp
+bmeUSwCMBHJvcGWURz+5mZmZmZmajAtzYW1wbGVfc2l6ZZRLCYwTc2F2ZWRXaWRnZXRHZW9tZXRy
+eZROjBJzaHVmZmxlX3N0cmF0aWZpZWSUiIwIdXNlX3JvcGWUiYwLc2NvcmVfdGFibGWUfZSMEHNo
+b3dfc2NvcmVfaGludHOUfZQojAZNb2RlbF+UiIwGVHJhaW5flImMBVRlc3RflImMAkNBlIiMF1By
+ZWNpc2lvblJlY2FsbEZTdXBwb3J0lIiMC1RhcmdldFNjb3JllIiMCVByZWNpc2lvbpSIjAZSZWNh
+bGyUiIwCRjGUiIwDQVVDlIiMB0xvZ0xvc3OUiYwLU3BlY2lmaWNpdHmUiYwXTWF0dGhld3NDb3Jy
+Q29lZmZpY2llbnSUiIwDTVNFlIiMBFJNU0WUiIwDTUFFlIiMBE1BUEWUiIwFU01BUEWUiIwCUjKU
+iIwGQ1ZSTVNFlImMD0NsdXN0ZXJpbmdTY29yZZSIjApTaWxob3VldHRllIiMF0FkanVzdGVkTXV0
+dWFsSW5mb1Njb3JllIh1c4wLX192ZXJzaW9uX1+USwSMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMD2NsYXNz
+X3NlbGVjdGlvbpSMIShOb25lLCBzaG93IGF2ZXJhZ2Ugb3ZlciBjbGFzc2VzKZRK/////4aUjAxm
+b2xkX2ZlYXR1cmWUTkr+////hpSMFWZvbGRfZmVhdHVyZV9zZWxlY3RlZJSJSv7///+GlGgMfZRo
+J0sEdYwKYXR0cmlidXRlc5QojApiaW5kZXJfcGN0lEsChpSMDGFpcl92b2lkX3BjdJRLAoaUjAd2
+bWFfcGN0lEsChpSMFWFnZ3JlZ2F0ZV9zaGFwZV9pbmRleJRLAoaUjA9ncmFkYXRpb25faW5kZXiU
+SwKGlHSUjAVtZXRhc5SMBm1peF9pZJRLA4aUhZSMCmNsYXNzX3ZhcnOUjAxzdGFiaWxpdHlfa06U
+SwKGlIWUdWJhdS4=
+</properties>
+		<properties node_id="6" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': None, 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

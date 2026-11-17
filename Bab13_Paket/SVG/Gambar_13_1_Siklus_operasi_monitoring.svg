@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+ <title id="title">Siklus operasi dan pemantauan model untuk skrining inspeksi</title>
+ <desc id="desc">Alur dari batas penggunaan dan gerbang rilis, ke layanan terbatas, pemantauan berlapis, triase manusia, tindakan korektif, dan rilis ulang atau penghentian.</desc>
+ <defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#47616f"/></marker>
+  <style>
+   .head{font:700 23px Arial,sans-serif;fill:#17365d}.sub{font:16px Arial,sans-serif;fill:#243746}.small{font:14px Arial,sans-serif;fill:#334b58}.node{fill:#f4f7f8;stroke:#47616f;stroke-width:2;rx:18}.gate{fill:#e5f2ef;stroke:#1f6e69;stroke-width:2;rx:18}.warn{fill:#fff3d7;stroke:#ac7612;stroke-width:2;rx:18}.stop{fill:#fae8e8;stroke:#9d3b3b;stroke-width:2;rx:18}.line{fill:none;stroke:#47616f;stroke-width:3;marker-end:url(#arrow)}.dash{fill:none;stroke:#1f6e69;stroke-width:2.5;stroke-dasharray:8 7;marker-end:url(#arrow)}
+  </style>
+ </defs>
+ <rect x="0" y="0" width="1200" height="520" fill="#ffffff"/>
+ <text x="40" y="48" class="head">Siklus operasi model: setiap alert harus berujung pada pemeriksaan dan keputusan</text>
+ <rect class="gate" x="35" y="115" width="190" height="120"/>
+ <text x="55" y="148" class="head">1. Batas &amp; rilis</text><text x="55" y="179" class="small">Tujuan, larangan, data,</text><text x="55" y="200" class="small">model, ambang, persetujuan</text>
+ <rect class="node" x="285" y="115" width="190" height="120"/>
+ <text x="305" y="148" class="head">2. Penggunaan</text><text x="305" y="179" class="small">Skor prioritas inspeksi</text><text x="305" y="200" class="small">ditinjau pengguna ahli</text>
+ <rect class="warn" x="535" y="92" width="220" height="165"/>
+ <text x="555" y="128" class="head">3. Pemantauan</text><text x="555" y="160" class="small">Layanan &amp; kualitas input</text><text x="555" y="183" class="small">Distribusi skor &amp; drift</text><text x="555" y="206" class="small">Label matang &amp; kinerja</text><text x="555" y="229" class="small">Keputusan &amp; override</text>
+ <rect class="node" x="815" y="115" width="190" height="120"/>
+ <text x="835" y="148" class="head">4. Triase manusia</text><text x="835" y="179" class="small">Periksa sumber, ukuran,</text><text x="835" y="200" class="small">kelompok dan dampak</text>
+ <rect class="gate" x="1045" y="115" width="130" height="120"/>
+ <text x="1063" y="148" class="head">5. Respons</text><text x="1063" y="179" class="small">Perbaiki, batasi,</text><text x="1063" y="200" class="small">rollback / hentikan</text>
+ <path class="line" d="M225 175 H280"/><path class="line" d="M475 175 H530"/><path class="line" d="M755 175 H810"/><path class="line" d="M1005 175 H1040"/>
+ <rect class="stop" x="445" y="345" width="255" height="105"/>
+ <text x="465" y="381" class="head">Fallback manual</text><text x="465" y="411" class="small">Saat data, layanan, atau bukti</text><text x="465" y="431" class="small">tidak memenuhi batas yang disetujui</text>
+ <path class="dash" d="M630 260 V310 H575 V340"/><path class="dash" d="M910 240 V300 H700 V390"/>
+ <path class="dash" d="M1110 240 V475 H130 V240"/>
+ <text x="745" y="487" class="small">Siklus ulang hanya setelah investigasi, validasi perubahan, dan persetujuan baru.</text>
+</svg>

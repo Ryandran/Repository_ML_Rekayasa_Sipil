@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="650" viewBox="0 0 1500 650">
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#315a73"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="750" y="45" text-anchor="middle" font-family="Arial" font-size="31" font-weight="bold" fill="#17324d">DAG asumsi untuk latihan pemeliharaan perkerasan</text>
+<g fill="none" stroke="#315a73" stroke-width="4" marker-end="url(#arrow)">
+<path d="M360 158 C455 158 510 260 600 280"/>
+<path d="M360 445 C455 445 510 345 600 325"/>
+<path d="M880 305 H1120"/>
+<path d="M360 140 C560 65 950 65 1125 263"/>
+<path d="M360 460 C560 585 955 585 1125 347"/>
+</g>
+<g fill="#e8f1f7" stroke="#315a73" stroke-width="3"><rect x="70" y="105" width="290" height="110" rx="22"/><rect x="70" y="390" width="290" height="110" rx="22"/></g>
+<rect x="600" y="250" width="280" height="110" rx="22" fill="#ffefd3" stroke="#315a73" stroke-width="3"/>
+<rect x="1120" y="250" width="300" height="110" rx="22" fill="#e4f2e8" stroke="#315a73" stroke-width="3"/>
+<g font-family="Arial" font-size="24" text-anchor="middle" fill="#182c3b">
+<text x="215" y="150">IRI baseline</text><text x="215" y="181">(kondisi awal)</text>
+<text x="215" y="435">Drainase, truk, hujan</text><text x="215" y="466">(kovariat awal)</text>
+<text x="740" y="294">Pemeliharaan A</text><text x="740" y="327">(treatment)</text>
+<text x="1270" y="294">IRI enam bulan Y</text><text x="1270" y="327">(outcome)</text>
+</g>
+<g font-family="Arial" font-size="19" fill="#334155"><text x="725" y="86" text-anchor="middle">pengaruh kondisi awal</text><text x="735" y="570" text-anchor="middle">pengaruh kovariat awal</text></g>
+<text x="750" y="632" text-anchor="middle" font-family="Arial" font-size="18" fill="#555">Panah adalah asumsi pada generator sintesis; verifikasi arah dan variabel perancu pada data lapangan.</text>
+</svg>

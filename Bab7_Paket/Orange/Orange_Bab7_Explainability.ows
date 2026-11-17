@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Bab 7 - Explainability dan interpretabilitas" description="File CSV -&gt; Select Columns -&gt; Rank (asosiasi fitur) dan Tree -&gt; Tree Viewer (model intrinsik). Pilih marshall_regression.csv; stability_kN target dan mix_id metadata. Rank bukan SHAP.">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(80, 210)" />
+		<node id="1" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns" position="(300, 210)" />
+		<node id="6" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(300, 405)" />
+	<node id="2" name="Rank" qualified_name="Orange.widgets.data.owrank.OWRank" project_name="Orange3" version="" title="Rank" position="(540, 100)" /><node id="3" name="Tree" qualified_name="Orange.widgets.model.owtree.OWTreeLearner" project_name="Orange3" version="" title="Tree" position="(540, 290)" /><node id="4" name="Tree Viewer" qualified_name="Orange.widgets.visualize.owtreeviewer.OWTreeGraph" project_name="Orange3" version="" title="Tree Viewer" position="(820, 290)" /></nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" /><link id="1" source_node_id="1" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" /><link id="2" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" /><link id="3" source_node_id="1" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" /><link id="4" source_node_id="3" sink_node_id="4" source_channel="Model" sink_channel="Tree" enabled="true" source_channel_id="model" sink_channel_id="tree" /></links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="1" format="pickle">gASVRQIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUTowSdXNlX2lucHV0X2ZlYXR1
+cmVzlImMC19fdmVyc2lvbl9flEsBjBBjb250ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3aWRnZXQu
+c2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21haW5fcm9sZV9oaW50
+c5R9lCiMCmJpbmRlcl9wY3SUSwKGlIwJYXR0cmlidXRllEsAhpSMDGFpcl92b2lkX3BjdJRLAoaU
+aBRLAYaUjAd2bWFfcGN0lEsChpRoFEsChpSMFWFnZ3JlZ2F0ZV9zaGFwZV9pbmRleJRLAoaUaBRL
+A4aUjA9ncmFkYXRpb25faW5kZXiUSwKGlGgUSwSGlIwMc3RhYmlsaXR5X2tOlEsChpSMBWNsYXNz
+lEsAhpSMBm1peF9pZJRLA4aUjARtZXRhlEsAhpR1Sv7///+GlGgGSwF1jAphdHRyaWJ1dGVzlH2U
+KIwKYmluZGVyX3BjdJRLAowMYWlyX3ZvaWRfcGN0lEsCjAd2bWFfcGN0lEsCjBVhZ2dyZWdhdGVf
+c2hhcGVfaW5kZXiUSwKMD2dyYWRhdGlvbl9pbmRleJRLAowMc3RhYmlsaXR5X2tOlEsCdYwFbWV0
+YXOUfZSMBm1peF9pZJRLA3N1YmF1Lg==
+</properties>
+		<properties node_id="6" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': None, 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+	<properties node_id="2" format="literal">{}</properties><properties node_id="3" format="literal">{}</properties><properties node_id="4" format="literal">{}</properties></node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

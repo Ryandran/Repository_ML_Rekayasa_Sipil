@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">Matriks kebingungan klasifikasi prioritas inspeksi</title>
+  <desc id="desc">Baris menunjukkan kelas aktual dan kolom menunjukkan prediksi. Sel berisi true negative, false positive, false negative, dan true positive.</desc>
+  <rect width="900" height="620" fill="#ffffff"/>
+  <text id="title" x="450" y="54" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#243746">Matriks kebingungan</text>
+  <text x="530" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#243746">Prediksi model</text>
+  <text x="390" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" fill="#243746">Rutin</text>
+  <text x="610" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" fill="#243746">Prioritas</text>
+  <text x="130" y="315" text-anchor="middle" transform="rotate(-90 130 315)" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#243746">Aktual (rujukan)</text>
+  <text x="235" y="265" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#243746">Rutin</text>
+  <text x="235" y="425" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#243746">Prioritas</text>
+  <rect x="280" y="190" width="220" height="160" fill="#e2f0e8"/>
+  <rect x="500" y="190" width="220" height="160" fill="#fff0dc"/>
+  <rect x="280" y="350" width="220" height="160" fill="#fde4e1"/>
+  <rect x="500" y="350" width="220" height="160" fill="#e2f0e8"/>
+  <rect x="280" y="190" width="440" height="320" fill="none" stroke="#526b7a" stroke-width="3"/>
+  <path d="M500 190v320M280 350h440" stroke="#526b7a" stroke-width="3"/>
+  <g text-anchor="middle" font-family="Arial,sans-serif" fill="#243746">
+    <text x="390" y="250" font-size="28" font-weight="700">TN</text>
+    <text x="390" y="282" font-size="17">rutin dikenali</text>
+    <text x="610" y="250" font-size="28" font-weight="700">FP</text>
+    <text x="610" y="282" font-size="17">rutin salah ditandai</text>
+    <text x="390" y="410" font-size="28" font-weight="700">FN</text>
+    <text x="390" y="442" font-size="17">prioritas terlewat</text>
+    <text x="610" y="410" font-size="28" font-weight="700">TP</text>
+    <text x="610" y="442" font-size="17">prioritas dikenali</text>
+  </g>
+  <text x="450" y="570" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#526171">Tetapkan kelas positif dan periksa orientasi sumbu sebelum membaca metrik.</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="780" viewBox="0 0 1500 780">
+<rect width="1500" height="780" fill="#f7f9fc"/>
+<text x="750" y="55" text-anchor="middle" font-family="Arial" font-size="30" font-weight="bold" fill="#19334f">Membangun data ML yang menyatukan ruang, waktu, dan sumber</text>
+<g font-family="Arial" fill="#19334f">
+<rect x="60" y="135" width="390" height="450" rx="20" fill="#fff" stroke="#5486a3" stroke-width="3"/>
+<text x="255" y="185" text-anchor="middle" font-size="25" font-weight="bold">Ruang</text>
+<text x="95" y="240" font-size="19">• Identitas aset dan unit observasi</text><text x="95" y="285" font-size="19">• Koordinat, CRS, datum, satuan</text><text x="95" y="330" font-size="19">• Geometri dan tetangga relevan</text><text x="95" y="375" font-size="19">• Cakupan dan resolusi</text>
+<text x="95" y="465" font-size="17" fill="#526a7d">Contoh: komponen jembatan,</text><text x="95" y="492" font-size="17" fill="#526a7d">ruas, lereng atau DAS.</text>
+<rect x="555" y="135" width="390" height="450" rx="20" fill="#fff" stroke="#4e9a82" stroke-width="3"/>
+<text x="750" y="185" text-anchor="middle" font-size="25" font-weight="bold">Waktu</text>
+<text x="590" y="240" font-size="19">• Waktu ukur, bukan hanya waktu catat</text><text x="590" y="285" font-size="19">• Interval, frekuensi, dan jendela</text><text x="590" y="330" font-size="19">• Horizon target dan lag</text><text x="590" y="375" font-size="19">• Data hilang dan keterlambatan</text>
+<text x="590" y="465" font-size="17" fill="#526a7d">Contoh: inspeksi berkala,</text><text x="590" y="492" font-size="17" fill="#526a7d">sensor kontinu, prakiraan.</text>
+<rect x="1050" y="135" width="390" height="450" rx="20" fill="#fff" stroke="#d29a46" stroke-width="3"/>
+<text x="1245" y="185" text-anchor="middle" font-size="25" font-weight="bold">Modalitas</text>
+<text x="1085" y="240" font-size="19">• Catatan, citra, sensor, geometri</text><text x="1085" y="285" font-size="19">• Mutu, skala, dan label tiap sumber</text><text x="1085" y="330" font-size="19">• Registrasi dan penyelarasan</text><text x="1085" y="375" font-size="19">• Strategi fusi dan data tak tersedia</text>
+<text x="1085" y="465" font-size="17" fill="#526a7d">Setiap sumber perlu metadata</text><text x="1085" y="492" font-size="17" fill="#526a7d">serta batas cakupannya.</text>
+<path d="M255 620 V675 H1245 V620" fill="none" stroke="#627b8d" stroke-width="4"/><path d="M750 675 V710" stroke="#627b8d" stroke-width="5"/><path d="M750 710 l-12 -22 h24 z" fill="#627b8d"/>
+<text x="750" y="755" text-anchor="middle" font-size="19" font-weight="bold">Unit analisis yang jelas → dataset terpadu yang dapat divalidasi</text>
+</g></svg>
