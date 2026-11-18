@@ -1,5 +1,10 @@
 # Catatan Perubahan
 
+## Bacaan lanjut di Bab 2, 3, dan 7–15 (naskah Tahap 23)
+
+- Bagian Bacaan lanjut ditambahkan di 11 bab (kini ada di Bab 2–15), 2–4 butir per bab, hanya dari rujukan yang sudah ada di daftar pustaka bab itu, masing-masing dengan alasan membacanya.
+- Pengecualian: Bab 2 (satu butir) dan Bab 15 (dua butir) karena daftar pustakanya hanya memuat satu atau dua rujukan. Naskah 238 halaman.
+
 ## Tindak lanjut audit sitasi (naskah Tahap 22)
 
 - Bab 11: Huang dkk. (2024) terverifikasi (penulis, jurnal, ringkasan) dan dikutip; penanda `[perlu verifikasi]` dihapus.
