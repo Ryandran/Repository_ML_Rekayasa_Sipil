@@ -1,16 +1,22 @@
-# Python
+# Data dibangkitkan ulang dari notebook pembangkit; CSV di luar praktikum/ tidak di-commit
+*.csv
+# Data latihan di praktikum/ dibawa di repositori karena pengguna Orange tidak menjalankan notebook
+!praktikum/**/*.csv
+
+# Python dan Jupyter
 __pycache__/
 *.py[cod]
 .venv/
 venv/
 .env
-
-# Jupyter
 .ipynb_checkpoints/
 
-# Temporary and operating-system files
-~$*
+# Log dan berkas sementara
+*.log
 *.tmp
+~$*
+
+# Sistem operasi
 .DS_Store
 Thumbs.db
 Desktop.ini

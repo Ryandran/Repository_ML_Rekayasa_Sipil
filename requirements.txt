@@ -3,3 +3,6 @@ pandas
 scipy
 scikit-learn
 matplotlib
+# Explainability, Bab 7
+shap
+lime

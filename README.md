@@ -1,51 +1,61 @@
-# Machine Learning untuk Rekayasa Sipil
+# Machine Learning untuk Rekayasa Sipil — Materi Pendamping
 
-Repository pendamping bahan ajar Program Magister Teknik Sipil. Isinya mencakup naskah induk, notebook Python, dataset sintetis, workflow Orange, dan ilustrasi vektor per bab.
+Notebook, data sintetis, alur kerja Orange, dan ilustrasi pendamping buku ajar *Machine Learning untuk Rekayasa Sipil* (Program Magister Teknik Sipil).
 
-> **Status naskah:** PDF kerja saat ini 174 halaman. Sasaran 250–300 halaman belum tercapai; naskah masih perlu pengayaan materi secara substantif. Metadata bibliografi inti sudah diperiksa, tetapi verifikasi seluruh sumber dan klaim belum selesai.
+> **Status: draf, belum dirilis.** Isi repositori masih bisa berubah mengikuti penyusunan buku. PDF kerja saat ini 174 halaman; sasaran 250–300 halaman belum tercapai, dan verifikasi seluruh sumber serta klaim belum selesai.
 
-## Isi repository
+## Isi
 
-- [`book/`](book/) — naskah induk terbaru dalam DOCX dan PDF.
-- [`Bab1_Paket/`–`Bab15_Paket/`](#paket-per-bab) — paket bab yang berisi notebook, data, workflow Orange, README, dan/atau ilustrasi.
-- [`requirements.txt`](requirements.txt) — pustaka Python untuk notebook.
-- [`requirements-optional.txt`](requirements-optional.txt) — pustaka tambahan untuk latihan explainability Bab 7.
+| Folder | Isi |
+|---|---|
+| `book/` | Naskah induk (`naskah-induk.docx`, `naskah-induk.pdf`) dan hasil suntingan bahasa (`Buku_Ajar_ML_Rekayasa_Sipil_Suntingan_Bahasa_Tahap1.docx`) |
+| `notebooks/babNN/` | Notebook Python per bab. Notebook berawalan `PxxA` adalah pembangkit data sintetis; `PxxB` dan seterusnya adalah analisisnya |
+| `praktikum/babNN/` | Alur kerja Orange (`.ows`), data latihan (`.csv`, `.tab`), dan `README.md` bab berisi urutan langkah serta catatan interpretasi |
+| `gambar/babNN/` | Ilustrasi vektor (SVG) pendamping naskah |
 
-## Paket per bab
+### Peta bab
 
-| Bab | Topik | Materi pendamping |
-|---|---|---|
-| 1 | Machine learning dalam cara berpikir rekayasa | Ilustrasi SVG |
-| 2 | Dari masalah rekayasa ke pertanyaan ML | Ilustrasi SVG |
-| 3 | Data dan statistik | Generator data, audit eksplorasi, Orange |
-| 4 | Algoritma machine learning | Generator, analisis Python, Orange |
-| 5 | Indikator kinerja dan metrik kesalahan | Generator, evaluasi Python, Orange |
-| 6 | Coding-free dan coding-based | Generator, praktikum Orange dan Python |
-| 7 | Explainability dan interpretabilitas | Notebook, Orange |
-| 8 | Discovery dan inferensi kausal | Generator, analisis Python, Orange |
-| 9 | Topik lanjutan machine learning | Generator, augmentasi/ensemble, symbolic regression |
-| 10 | Praktik audit penelitian ML | Generator, audit data dan validasi, Orange |
-| 11 | Arah masa depan ML untuk rekayasa sipil | Ilustrasi SVG |
-| 12 | Data spasial, temporal, dan multimodal | Generator panel, analisis dan validasi, Orange |
-| 13 | Implementasi, pemantauan, dan tata kelola | Generator stream, monitoring, Orange |
-| 14 | Studio riset I: pertanyaan, data, dan desain | Generator lereng, protokol dan baseline, Orange |
-| 15 | Studio riset II: validasi, pelaporan, dan klaim | Audit validasi dan sensitivitas, Orange |
+| Bab | Topik | `notebooks/` | `praktikum/` | `gambar/` |
+|---|---|:-:|:-:|:-:|
+| 1 | Machine learning dalam cara berpikir rekayasa | | | ✔ |
+| 2 | Dari masalah rekayasa ke pertanyaan ML | | | ✔ |
+| 3 | Data dan statistik | ✔ | ✔ | ✔ |
+| 4 | Algoritma machine learning | ✔ | ✔ | ✔ |
+| 5 | Indikator kinerja dan metrik kesalahan | ✔ | ✔ | ✔ |
+| 6 | Coding-free dan coding-based | ✔ | ✔ | ✔ |
+| 7 | Explainability dan interpretabilitas | ✔ | ✔ | ✔ |
+| 8 | Discovery dan inferensi kausal | ✔ | ✔ | ✔ |
+| 9 | Topik lanjutan machine learning | ✔ | ✔ | ✔ |
+| 10 | Praktik audit penelitian ML | ✔ | ✔ | ✔ |
+| 11 | Arah masa depan ML untuk rekayasa sipil | | | ✔ |
+| 12 | Data spasial, temporal, dan multimodal | ✔ | ✔ | ✔ |
+| 13 | Implementasi, pemantauan, dan tata kelola | ✔ | ✔ | ✔ |
+| 14 | Studio riset I: pertanyaan, data, dan desain | ✔ | ✔ | ✔ |
+| 15 | Studio riset II: validasi, pelaporan, dan klaim | ✔ | ✔ | ✔ |
 
-## Memulai
+## Cara memakai
 
-1. Buka README pada folder bab yang dipilih dan ikuti urutan notebook di sana.
-2. Jalankan notebook generator lebih dahulu bila tersedia. Notebook menghasilkan data latihan sintetis dengan seed dan asumsi yang dicatat.
-3. Jalankan notebook analisis menggunakan Google Colab atau lingkungan Python lokal.
-4. Untuk Orange, buka file `.ows` di folder bab. Setelah repository dipindahkan atau workflow dibuka di komputer lain, pilih ulang dataset pada widget **File**.
+1. Buka `praktikum/babNN/README.md` untuk bab yang dipilih dan ikuti urutan langkahnya.
+2. Jalankan notebook pembangkit (`PxxA`) lebih dulu bila ada. Notebook menghasilkan data latihan sintetis dengan *seed* dan asumsi yang dicatat.
+3. Jalankan notebook analisis di Google Colab atau Python lokal.
+4. Untuk Orange, buka berkas `.ows` di `praktikum/babNN/`. Setelah repositori dipindahkan atau alur dibuka di komputer lain, pilih ulang dataset pada widget **File**.
 
-Notebook disimpan di folder paket masing-masing bab. Jalankan dari direktori kerja yang disebutkan pada README bab karena sebagian notebook mengharapkan root repository, sedangkan yang lain membuat keluaran di folder kerja. Orange Data Mining yang dipakai saat menyiapkan contoh adalah versi 3.41.0. Versi pustaka Python yang tersedia di Colab dapat berubah; periksa README bab bila hasil berbeda.
+**Direktori kerja.** Bab 3 dan 8–15: jalankan notebook dari akar repositori (data ditulis ke `praktikum/babNN/`). Bab 4–6: jalankan dari `praktikum/babNN/` (notebook membuat folder `data_babN` di situ). Bab 7: jalankan dari `notebooks/bab07/`; notebook mencari CSV Bab 6 di `praktikum/bab06/data_bab6/`.
+
+```bash
+pip install -r requirements.txt
+```
+
+Orange Data Mining yang dipakai menyiapkan contoh adalah versi 3.41.0. Versi pustaka Python di Colab dapat berubah; periksa README bab bila hasil berbeda.
 
 ## Data dan batas penggunaan
 
-Dataset latihan dibuat secara sintetis untuk menjelaskan alur analisis dan menguji kode. Data tersebut bukan hasil pengukuran lapangan, pengujian material, inspeksi aset, atau dasar keputusan keselamatan. Jalankan ulang generator untuk mereproduksi keluaran; jangan menggeneralisasi skor simulasi ke infrastruktur nyata.
+Dataset latihan dibuat secara sintetis untuk menjelaskan alur analisis dan menguji kode. Data ini bukan hasil pengukuran lapangan, pengujian material, inspeksi aset, atau dasar keputusan keselamatan. Jalankan ulang pembangkit untuk mereproduksi keluaran; jangan menggeneralisasi skor simulasi ke infrastruktur nyata.
 
 ## Sitasi dan lisensi
 
-Rujukan akademik dicantumkan pada naskah induk dan/atau README terkait. PDF sumber buku Wiley yang menjadi bahan telaah tidak disertakan dalam repository.
+Rujukan akademik dicantumkan pada naskah induk dan/atau README bab terkait. PDF sumber buku Wiley yang menjadi bahan telaah tidak disertakan.
 
-Lisensi repository belum ditetapkan. Sebelum repository dipublikasikan, tentukan izin penggunaan untuk naskah, notebook, ilustrasi, dan dataset. Tanpa berkas lisensi, pengguna tidak seharusnya menganggap ada izin untuk menggunakan ulang atau mendistribusikan materi.
+**Lisensi belum ditetapkan.** Sebelum repositori dipublikasikan, tentukan izin penggunaan untuk naskah, notebook, ilustrasi, dan dataset (repositori `ml-rekayasa-sipil` memisahkan kode dan data dalam `LICENSE` dan `LICENSE-DATA.md`). Tanpa berkas lisensi, pengguna tidak seharusnya menganggap ada izin menggunakan ulang atau mendistribusikan materi.
+
+Perubahan dicatat di `CHANGELOG.md`.
