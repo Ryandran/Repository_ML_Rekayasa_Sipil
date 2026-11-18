@@ -1,5 +1,12 @@
 # Catatan Perubahan
 
+## Notebook: penyegaran keluaran (PR terpisah)
+
+- Keluaran tersimpan dijalankan ulang dengan scikit-learn 1.8.0 untuk P03B, P04B, P05, P06B, P07, P10B, P12B, P13B, P14B, P15A; metadata kernel tidak diubah. Notebook generator (P06A dst.) tidak dijalankan ulang agar data tidak bergeser.
+- P07: judul grafik PDP diubah menjadi "Partial dependence: rerata model"; istilah baku (pengamatan, nonlinear) disesuaikan; P03B memakai "rerata". Sel SHAP/LIME opsional (pustaka tidak terpasang) dipertahankan dengan keluaran lama.
+- P12B dan P13B kini menyimpan gambar keluaran.
+- CSV di `praktikum/` yang ditulis ulang oleh notebook dikembalikan ke versi repositori.
+
 ## Naskah Tahap 14 (book/)
 
 - Dua belas gambar keluaran notebook (dirender netral dari sel yang dijalankan ulang dengan scikit-learn 1.8): Gambar 4.3; 5.4–5.5; 6.4–6.6; 7.2–7.5 (permutation importance, PDP/ICE, kasus lokal, pohon surrogate); 10.1 (P10B); 12.3 (P12B). Berkas di `gambar/babNN/`; perender di `skrip/render_keluaran_notebook.py`.
