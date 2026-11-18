@@ -2,7 +2,7 @@
 
 Notebook, data sintetis, alur kerja Orange, dan ilustrasi pendamping buku ajar *Machine Learning untuk Rekayasa Sipil* (Program Magister Teknik Sipil).
 
-> **Status: draf, belum dirilis.** Isi repositori masih bisa berubah mengikuti penyusunan buku. Naskah kerja saat ini (Tahap 26, rilis `naskah-tahap26`) 238 halaman, sudah memuat Kata Pengantar, Lampiran A–C, Glosarium, dan Daftar Tabel; sasaran 250–300 halaman belum tercapai. Verifikasi seluruh sumber dan klaim belum selesai.
+> **Status: draf, belum dirilis.** Isi repositori masih bisa berubah mengikuti penyusunan buku. Naskah kerja saat ini (Tahap 30, rilis `naskah-tahap30`) 244 halaman, sudah memuat Kata Pengantar, Lampiran A–D, Glosarium, dan Daftar Tabel; sasaran dilonggarkan menjadi sekitar 245 halaman tanpa pengisi. Verifikasi seluruh sumber dan klaim belum selesai.
 
 ## Isi
 
