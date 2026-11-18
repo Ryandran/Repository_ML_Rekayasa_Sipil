@@ -1,5 +1,10 @@
 # Catatan Perubahan
 
+## Notebook: keluaran tersimpan P08B, P09B, P09C
+
+- Ketiga notebook dijalankan dengan scikit-learn 1.8.0 dan keluarannya disimpan (sebelumnya kosong). Kode dan metadata kernel tidak diubah; CSV di `praktikum/` dikembalikan ke versi repositori.
+- Angka sama dengan teks naskah Bab 8 dan 9 (mis. P08B: selisih mentah 0,453 dan estimasi −0,828; P09B: recall 0,698 dan F1 0,433; P09C: MAE 7,14 dan 9,28).
+
 ## Naskah Tahap 15 (book/)
 
 - 23 gambar lama yang belum dirujuk di teks (Gambar 1.1–1.3, 2.1–2.2, 3.1–3.9, 5.1–5.2, 7.1, 10.2, 11.1, 12.1, 13.1, 14.1, 15.1 menurut nomor Tahap 14) kini masing-masing memiliki satu kalimat rujukan sebelum gambar. Gambar 3.11 sudah dirujuk bersama Gambar 3.10 sehingga tidak ditambah.
