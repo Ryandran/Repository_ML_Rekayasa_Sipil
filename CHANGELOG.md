@@ -1,5 +1,11 @@
 # Catatan Perubahan
 
+## Audit sitasi tahap pertama (naskah Tahap 21)
+
+- Tujuh rujukan baru yang diverifikasi pada halaman penerbit atau repositori resmi: Fawcett (2006), Brier (1950), Rousseeuw (1987), Efron (1979), Varma & Simon (2006), Cawley & Talbot (2010), Lei dkk. (2018). Dipakai pada Bab 5, 9, 11, dan 15.
+- Perbaikan di Bab 11: sitasi model fondasi pemantauan struktur dipindah dari Sato dkk. ke Benfenati dkk. (versi jurnal 2025); nama jurnal Sato dkk. dikoreksi; Jing dkk. dikutip. Bab 13: sitasi NIST dan ISO/IEC dirapikan. Bab 4: sitasi dalam kurung memakai "&".
+- Dua entri ditandai `[perlu verifikasi]` (Huang dkk. 2024 di Bab 11, Luleci dkk. 2024 di Bab 12). Celah sumber Bab 6 dan 14 dicatat, tidak ditambal. Naskah 234 halaman.
+
 ## Penomoran tabel dan Daftar Tabel (naskah Tahap 20)
 
 - Aturan: hanya tabel yang dirujuk naskah yang diberi nomor dan judul (`Tabel n.m  Judul`). Tabel lain tetap tanpa nomor. Ada 19 tabel isi (Bab 2: 2.1–2.2; Bab 3: 3.1–3.5; Bab 4: 4.1–4.2; Bab 5: 5.1; Bab 7: 7.1–7.4; Bab 9: 9.1–9.2; Bab 10: 10.1–10.3) ditambah 7 tabel lampiran (A.1–C.1).
