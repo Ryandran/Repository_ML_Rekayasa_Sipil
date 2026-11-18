@@ -23,6 +23,6 @@ Daftar hal yang belum selesai. Perbarui atau hapus butir yang sudah dikerjakan.
 | Butir | Status | Keterangan |
 |---|---|---|
 | Hapus atau arsipkan `notebooks/bab04/P04_data_sintesis_algoritma.ipynb` | Selesai: dihapus (keputusan Ryan, 2026-11-18) | Tidak dirujuk naskah; aturan skor jembatannya berbeda dari P04A dan menimpa CSV jembatan. |
-| Sitasi algoritma Bab 4 (ridge, lasso, CART, random forest, gradient boosting, SVM, k-NN, k-means, DBSCAN, Isolation Forest, LOF, PCA, scikit-learn) | Menunggu persetujuan | Belum ada sitasi di teks kecuali Naser (2023) dan scikit-learn (n.d.). Sumber perlu diverifikasi sebelum ditulis. |
+| Sitasi algoritma Bab 4 (ridge, lasso, random forest, gradient boosting, SVM, k-NN, k-means, Ward, DBSCAN, Isolation Forest, LOF, PCA, scikit-learn) | Selesai 2026-11-18 (Tahap6) | 13 sumber dicocokkan dengan laman penerbit atau repositori resmi. DOI Hoerl & Kennard (1970) dan Tibshirani (1996) belum terverifikasi sehingga tidak dicantumkan; nomor terbitan Cortes & Vapnik (1995) tidak dicantumkan karena tidak tertera pada sumber yang diperiksa. CART (Breiman dkk., 1984) tidak dikutip. Naive Bayes, jaringan saraf, ANFIS, LSTM, GNN, transformer, dan fuzzy c-means belum bersitasi. |
 | Uji `Orange_Bab4_Regresi.ows` di Orange 3.41 | Belum diuji | Struktur: 8 widget, 7 tautan; berkas tidak menyimpan jalur data. |
 | Bab 4–6 dijalankan dari `praktikum/babNN/`, bab lain dari akar repositori | Selesai: semua bab dijalankan dari akar repositori; Colab tetap memakai `data_babN` di direktori kerja |
