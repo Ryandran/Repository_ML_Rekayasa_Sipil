@@ -1,5 +1,13 @@
 # Catatan Perubahan
 
+## Bab 16 Pengantar deep learning (naskah Tahap 16)
+
+- Bab baru setelah Bab 15 (11 subbab, 6 gambar, 3 tabel, Definisi, Blueprint, 9 latihan, 7 referensi; naskah menjadi 209 halaman). `book/` kini memuat Tahap 16 menggantikan Tahap 15.
+- Notebook P16A (pembangkit 2.400 citra retak sintesis) dan P16B (MLP pada beton sintesis; CNN pada citra, pembagian per panel, variasi antarbenih) beserta `praktikum/bab16/`. Gambar konseptual dibuat oleh `skrip/gambar_konseptual_bab16.py`.
+- Hasil utama (seed 16016): MLP R² 0,894 vs regresi linear 0,900 vs Random Forest 0,820; CNN akurasi 0,900 vs MLP piksel 0,673 pada jumlah parameter sebanding.
+- Penomoran daftar Blueprint dan latihan Bab 16 dimulai dari 1 (penomoran bab lain masih berlanjut; dicatat sebagai tindak lanjut).
+- `requirements.txt`: catatan opsional PyTorch CPU.
+
 ## Notebook: keluaran tersimpan P08B, P09B, P09C
 
 - Ketiga notebook dijalankan dengan scikit-learn 1.8.0 dan keluarannya disimpan (sebelumnya kosong). Kode dan metadata kernel tidak diubah; CSV di `praktikum/` dikembalikan ke versi repositori.
