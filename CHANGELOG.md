@@ -1,5 +1,11 @@
 # Catatan Perubahan
 
+## Tindak lanjut audit sitasi (naskah Tahap 22)
+
+- Bab 11: Huang dkk. (2024) terverifikasi (penulis, jurnal, ringkasan) dan dikutip; penanda `[perlu verifikasi]` dihapus.
+- Sumber primer baru: Kapoor & Narayanan (2023) dan Roberts dkk. (2017) di Bab 6 dan 14; Rousseeuw (1987) di Bab 6; Nosek dkk. (2018) di Bab 14.
+- Bagian Bacaan lanjut ditambahkan di Bab 4, 5, dan 6 dari rujukan dokumentasi yang sudah ada. Bab lain belum memilikinya, padahal gaya selingkung mewajibkannya di Bab 2–15. Naskah 236 halaman.
+
 ## Audit sitasi tahap pertama (naskah Tahap 21)
 
 - Tujuh rujukan baru yang diverifikasi pada halaman penerbit atau repositori resmi: Fawcett (2006), Brier (1950), Rousseeuw (1987), Efron (1979), Varma & Simon (2006), Cawley & Talbot (2010), Lei dkk. (2018). Dipakai pada Bab 5, 9, 11, dan 15.
