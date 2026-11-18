@@ -9,7 +9,7 @@
 - `../../gambar/bab05/Gambar_5_1_Matriks_Kebingungan.svg` dan `../../gambar/bab05/Gambar_5_2_Global_dan_Lokal.svg` — ilustrasi pendamping.
 
 ## Menjalankan latihan
-1. Jalankan P05A di Google Colab atau Jupyter. Ia membuat folder `data_bab5` dengan CSV sintetis di direktori kerja.
+1. Jalankan P05A di Google Colab atau Jupyter. Ia membuat folder `data_bab5` dengan CSV sintetis (dari akar repositori: `praktikum/bab05/data_bab5`; di Colab: direktori kerja).
 2. Jalankan `P05_evaluasi_metrik.ipynb` dari direktori kerja yang sama. Ia menahan seluruh balok pada pemisahan uji, menghitung ukuran regresi, memeriksa kasus/subset, bootstrap per kelompok, klasifikasi dan clustering.
 3. Buka `Orange_Bab5_Evaluasi.ows`. Pada widget **File**, pilih `data_bab5/data_sintesis_lendutan_per_balok.csv`. Berkas ini berisi satu baris per balok pada beban terminal yang sama; tetapkan `deflection_mm` sebagai target, `beam_id` sebagai metadata, dan fitur geometri/lingkungan sebagai masukan. Sambungkan beberapa learner ke **Test and Score**. Untuk analisis kurva tahap demi tahap, gunakan P05B dengan pemisahan kelompok.
 4. Pembagian acak per baris tidak sesuai bila klaimnya generalisasi ke balok baru. Bila Orange 3.41.0 tidak menyediakan evaluasi berbasis grup lewat widget, gunakan `GroupShuffleSplit` di P05B.
