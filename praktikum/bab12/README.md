@@ -9,7 +9,7 @@ Semua tabel latihan pada paket ini adalah **data sintetis**, dibuat untuk mengaj
 1. Jalankan `P12A_generator_panel_sintetis.ipynb` dari root repository. Seed baku `12012`; notebook menulis CSV dan `.tab` ke `praktikum/bab12/`.
 2. Buka `Orange_Bab12_Data_Multimodal.ows` dengan Orange 3.41.0. Pada widget File, pilih `bridge_panel_orange.tab`; lanjutkan ke Data Table, Distributions, dan Scatter Plot untuk inspeksi.
 3. Jalankan `P12B_sinkronisasi_validasi_ruang_waktu.ipynb` dari root repository untuk audit, visualisasi, evaluasi split, dan ablation. Split yang digunakan: acak per baris, aset jembatan ditahan, serta bulan masa depan ditahan.
-4. Buka DOCX dan ilustrasi SVG di folder masing-masing sebagai bahan ajar.
+4. Baca Bab 12 pada naskah dan lihat ilustrasi di `gambar/bab12/`.
 
 ## Isi paket
 
@@ -28,11 +28,10 @@ Random row split membagi pengamatan yang saling berulang dari aset yang sama seh
 
 Untuk eksperimen multi-seed, ubah seed generator dan simpan hasil setiap replikasi; jangan memilih seed berdasarkan skor terbaik. Notebook menggunakan scikit-learn, pandas, NumPy dan matplotlib; Orange hanya digunakan pada eksplorasi visual.
 
-## Audit ulang (16 November 2026)
-- DOCX berisi 5.971 kata dan 12 tabel. Kedua notebook P12A/P12B dijalankan ulang sampai selesai tanpa exception; data menghasilkan 648 baris (18 jembatan sintetis × 36 bulan), dengan 54 baris sensor dan 73 baris modalitas visual yang hilang.
+## Hasil acuan
+- Kedua notebook P12A/P12B dijalankan ulang sampai selesai tanpa exception; data menghasilkan 648 baris (18 jembatan sintetis × 36 bulan), dengan 54 baris sensor dan 73 baris modalitas visual yang hilang.
 - Orange 3.41.0 memuat 648 baris; target `condition_next_3m_synth`, metadata `bridge_id` dan `observation_month`. Workflow 4 node/3 koneksi meneruskan data ke Distributions dan Scatter Plot.
 - Hasil split yang diregenerasi: row-random MAE 4,149/R² 0,696; bridge holdout MAE 5,189/R² 0,275; future-month MAE 3,265/R² 0,787. Perbedaan ini menguatkan bahwa split menjawab klaim generalisasi yang berlainan. Hasil tetap demonstrasi data sintetis.
-- SVG/OWS lolos parsing XML; naskah, dataset dan keluaran generator konsisten. Render halaman DOCX belum diverifikasi.
 
 ## Catatan penggunaan di repository
 

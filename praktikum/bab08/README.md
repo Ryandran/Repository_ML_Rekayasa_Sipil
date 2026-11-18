@@ -19,7 +19,7 @@
 
 Data sepenuhnya sintetis, bukan bukti lapangan atau rekomendasi kebijakan. Bootstrap mengukur variasi sampling dan tidak mengoreksi bias identifikasi.
 
-## Status pemeriksaan (16 November 2026)
+## Hasil acuan
 - P08A dan P08B dijalankan ulang dari root repository menggunakan Python Orange 3.41.0. Generator menghasilkan 2.400 baris dengan seed tetap; analisis mereproduksi perbedaan mentah +0,453, estimasi standardisasi −0,828, dan interval bootstrap 95% [−0,865; −0,783] terhadap efek DGP −0,80.
 - Workflow Orange memuat 2.400 baris; Distributions dan Scatter Plot menerima data. OWS memuat empat node dan tiga koneksi. Grafik menunjukkan asosiasi dan distribusi, bukan identifikasi efek kausal.
 - Orange dipakai untuk eksplorasi; inferensi di notebook Python. Data Table terhubung untuk inspeksi baris, tetapi smoke test headless tidak dapat memeriksa status inputnya melalui atribut publik.

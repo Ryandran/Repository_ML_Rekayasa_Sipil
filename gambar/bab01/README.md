@@ -1,11 +1,7 @@
-# Bab 1 — Machine Learning dalam Cara Berpikir Rekayasa
+# Gambar Bab 1 — Machine Learning dalam Cara Berpikir Rekayasa
 
-> Letak berkas: ilustrasi SVG ada di folder ini. Bab ini tidak memiliki notebook atau workflow Orange.
+Bab ini tidak memiliki notebook, data, atau alur kerja Orange. Folder ini memuat tiga ilustrasi vektor (SVG) yang dipakai pada naskah:
 
-Bab ini tersedia dalam naskah induk pada `../../book/naskah-induk.pdf` dan `../../book/naskah-induk.docx`. Folder ini memuat ilustrasi pendamping dalam format SVG; tidak ada notebook atau workflow Orange khusus untuk bab ini.
-
-Bab 1 memberi orientasi tentang ML dalam penyelidikan rekayasa. Paket ini berisi tiga ilustrasi SVG; gunakan bersama naskah induk di folder `book/`.
-
-## Catatan penggunaan di repository
-
-Gunakan ilustrasi SVG pada folder `SVG/` bersama naskah induk di `book/`.
+- `Gambar_1_1_ML_dalam_Penyelidikan_Rekayasa.svg` — Gambar 1.1, ML di antara pendekatan penelitian rekayasa.
+- `Gambar_1_2_Prediksi_Asosiasi_Kausalitas.svg` — Gambar 1.2, perbedaan prediksi, asosiasi, dan kausalitas.
+- `Gambar_1_3_Dari_Masalah_ke_Model_yang_Dapat_Dipercaya.svg` — Gambar 1.3, alur kerja dari masalah rekayasa ke model yang dapat dipercaya.
