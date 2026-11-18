@@ -1,9 +1,17 @@
 # Catatan Perubahan
 
+## Bab 16 Pengantar deep learning (naskah Tahap 16)
+
+- Bab baru setelah Bab 15 (11 subbab, 6 gambar, 3 tabel, Definisi, Blueprint, 9 latihan, 7 referensi; naskah menjadi 209 halaman). `book/` kini memuat Tahap 16 menggantikan Tahap 15.
+- Notebook P16A (pembangkit 2.400 citra retak sintesis) dan P16B (MLP pada beton sintesis; CNN pada citra, pembagian per panel, variasi antarbenih) beserta `praktikum/bab16/`. Gambar konseptual dibuat oleh `skrip/gambar_konseptual_bab16.py`.
+- Hasil utama (seed 16016): MLP R² 0,894 vs regresi linear 0,900 vs Random Forest 0,820; CNN akurasi 0,900 vs MLP piksel 0,673 pada jumlah parameter sebanding.
+- Penomoran daftar Blueprint dan latihan Bab 16 dimulai dari 1 (penomoran bab lain masih berlanjut; dicatat sebagai tindak lanjut).
+- `requirements.txt`: catatan opsional PyTorch CPU.
+
 ## Repositori: lisensi dan folder book/
 
 - Ditambahkan `LICENSE` (MIT, untuk kode) dan `LICENSE-DATA.md` (CC BY 4.0, untuk data sintetis, alur kerja Orange, README bab, dan ilustrasi). Naskah buku tidak tercakup; hak cipta penulis.
-- `book/` kini hanya berisi satu naskah versi terbaru (Tahap 15); Tahap 4, 5, 6, 9, 12, 13, 14 dihapus dari folder (riwayat tetap di git).
+- `book/` kini hanya berisi satu naskah versi terbaru (Tahap 16, setelah PR #15); Tahap 4, 5, 6, 9, 12, 13, 14 dihapus dari folder (riwayat tetap di git).
 - README: peta bab memuat Bab 16 (pengantar deep learning) dan Bab 17 (computer vision) sebagai rencana; status halaman dan bagian lisensi diperbarui.
 - `catatan-tindak-lanjut.md`: keputusan lingkup dicatat.
 
