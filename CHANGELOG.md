@@ -1,5 +1,12 @@
 # Catatan Perubahan
 
+## Verifikasi Luleci dkk. (2024) dan penyeragaman "dkk." (naskah Tahap 24–26)
+
+- Luleci dkk. (2024) di Bab 12 terverifikasi dari halaman penerbit dan sitasi resmi (*Automation in Construction*, vol. 165, artikel 105546, doi 10.1016/j.autcon.2024.105546); penanda `[perlu verifikasi]` dan catatan terkait dihapus. Volume 168 yang sempat tertulis dikoreksi menjadi 165.
+- Sitasi Luleci dkk. di Bab 12 dipindah ke klausa yang sesuai dengan ringkasan artikel (hubungan sensor dengan elemen struktur mengikuti sistem koordinat aset). Kalimat "Kedekatan geografis saja tidak menjelaskan hubungan sebab-akibat atau mekanis" kini tanpa sitasi dan berstatus penalaran penulis. Butir Bacaan lanjut untuk artikel ini disesuaikan dengan ringkasannya.
+- "et al." diganti "dkk." di tujuh sitasi sesuai gaya selingkung.
+- Naskah tetap 238 halaman. Rilis: `naskah-tahap26` (DOCX dan PDF, pra-rilis).
+
 ## Bacaan lanjut di Bab 2, 3, dan 7–15 (naskah Tahap 23)
 
 - Bagian Bacaan lanjut ditambahkan di 11 bab (kini ada di Bab 2–15), 2–4 butir per bab, hanya dari rujukan yang sudah ada di daftar pustaka bab itu, masing-masing dengan alasan membacanya.
