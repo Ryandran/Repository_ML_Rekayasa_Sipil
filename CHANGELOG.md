@@ -1,5 +1,12 @@
 # Catatan Perubahan
 
+## Penomoran tabel dan Daftar Tabel (naskah Tahap 19)
+
+- Audit 108 tabel naskah. 89 tabel isi Bab 1–17 dinomori berurutan per bab dengan judul seragam (`Tabel n.m  Judul`); sebelumnya hanya sekitar 17 yang berjudul dan urutannya tidak selalu cocok (Bab 10 memuat 10.1, 10.3, 10.2; Bab 7 merujuk nomor yang tidak sesuai urutan tabel).
+- Rujukan lama di Bab 7 disesuaikan (7.3→7.1, 7.1→7.2, 7.4→7.3). Setiap tabel dirujuk sedikitnya sekali sebelum tabel muncul; 77 kalimat rujukan ditambahkan pada paragraf sebelum tabel. Tidak ada isi tabel yang diubah.
+- Tabel Definisi dan Blueprint di akhir bab serta tabel satu baris pembungkus gambar tidak dinomori.
+- Daftar Tabel (96 entri, termasuk Tabel A.1–C.1) ditambahkan setelah Daftar Gambar. Naskah menjadi 239 halaman.
+
 ## Kata Pengantar, Lampiran A–C, dan Glosarium (naskah Tahap 18)
 
 - Naskah menjadi 231 halaman (dari 220): Kata Pengantar (sebelum Daftar Isi), Lampiran A (panduan instalasi dan lingkungan; Tabel A.1–A.3), Lampiran B (katalog dataset sintesis menurut bab dengan ukuran dan seed, dataset citra terbuka, kerangka katalog dataset; Tabel B.1–B.3; 6 referensi), dan Lampiran C (glosarium 69 istilah Indonesia–Inggris dengan bab utama; Tabel C.1). Ukuran dan seed dibaca dari berkas dan notebook di repositori.
