@@ -11,7 +11,7 @@ Dasar: Tahap 15 memiliki 15 bab, 64 gambar (semua dirujuk), keluaran notebook se
 - **Target halaman:** 250–300 (sesuai README).
 - **Letak bab:** computer vision ditaruh **sesudah Bab 15**, didahului **satu bab pengantar deep learning**. Penomoran: **Bab 16 Pengantar deep learning**, **Bab 17 Computer vision**. Pengantar deep learning dikerjakan lebih dulu.
 - **Lisensi** (diputuskan Claude atas permintaan Ryan): kode MIT (`LICENSE`); data sintetis, alur kerja Orange, README bab, dan ilustrasi CC BY 4.0 (`LICENSE-DATA.md`); naskah buku hak cipta penulis karena direncanakan terbit melalui penerbit.
-- **`book/`:** hanya satu buku versi terbaru yang disimpan; versi lama dihapus dari folder (riwayat tetap di git). Bila ada kata kunci "versi akhir", berkas ini diganti, bukan ditambah.
+- **Naskah (diperbarui 2026-11-18):** folder `book/` dipindah ke Releases GitHub atas keputusan penulis. Sebelumnya: hanya satu buku versi terbaru yang disimpan; versi lama dihapus dari folder (riwayat tetap di git). Bila ada kata kunci "versi akhir", berkas ini diganti, bukan ditambah.
 
 | Tahap | Isi | Status | Keluaran |
 |---|---|---|---|
