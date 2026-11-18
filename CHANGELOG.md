@@ -1,5 +1,12 @@
 # Catatan Perubahan
 
+## 2026-11-18 — Lanjutan Bab 4: notebook ganda dihapus, direktori kerja Bab 4–7 diseragamkan
+- `notebooks/bab04/P04_data_sintesis_algoritma.ipynb` dihapus (tidak dirujuk naskah; menimpa CSV jembatan).
+- P04A, P05A, P06A menulis ke `praktikum/babNN/data_babN` bila dijalankan dari akar repositori, dan ke `data_babN` di direktori kerja bila folder `praktikum/babNN` tidak ada (Colab). P04B, P05B, P06B, P07 mencari kedua lokasi.
+- Semua notebook Bab 4–7 dijalankan ulang dari akar repositori dan dari folder kosong (mode Colab) tanpa galat; keluaran tidak lagi memuat jalur lokal. CSV Bab 4 dan 5 identik; `pavement_priority.csv` (Bab 6) berbeda hingga 4,4e-16 pada beberapa nilai akibat versi numpy, label sama, sehingga berkas di repositori tidak diubah.
+- README akar dan README Bab 4–6 disesuaikan.
+- Naskah Tahap6 (`book/`): sitasi Bab 4 (13 sumber, Referensi diurutkan abjad), petunjuk jalur P04 disesuaikan, dan koreksi kode `from sklearn.preprocessing import StandardScaler` yang keliru terubah menjadi `sklearn.prapemrosesan` pada Tahap5 (akibat pembakuan istilah). Tahap6 menggantikan Tahap5.
+
 ## 2026-11-18 — Audit Bab 4 (notebook P04B, README, naskah)
 - P04B diperluas agar sesuai panduan Bab 4: baseline rerata, pipeline k-NN (dengan dan tanpa penskalaan), regresi linear/pohon/random forest/gradient boosting dengan MAE, RMSE, dan rerata residual, lima pembagian acak, regresi logistik dengan ambang peluang, perbandingan k-means dan clustering hierarkis, tumpang tindih flag anomali. Pencarian folder data otomatis; keluaran dijalankan ulang (jalur lokal Windows di keluaran lama hilang).
 - Temuan: `P04_data_sintesis_algoritma.ipynb` bukan salinan P04A; aturan skor jembatannya berbeda (koefisien dan ambang) sehingga menimpa label `data_sintesis_prioritas_jembatan.csv` di 277 baris bila dijalankan. P04A mereproduksi keempat CSV di repositori secara identik. Berkas ganda belum dihapus; menunggu keputusan.
