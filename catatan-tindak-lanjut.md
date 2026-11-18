@@ -18,3 +18,12 @@ Daftar hal yang belum selesai. Perbarui atau hapus butir yang sudah dikerjakan.
 - Duplikat `P04_data_sintesis_algoritma.ipynb` (hanya beda judul dan sel markdown dari P04A).
 - Keluaran notebook P04B, P06A, dan P07 masih memuat jalur lokal Windows.
 - Keputusan LICENSE dan LICENSE-DATA, serta apakah `book/` tetap di repositori.
+
+## Bab 4 (diaudit 2026-11-18)
+
+| Butir | Status | Keterangan |
+|---|---|---|
+| Hapus atau arsipkan `notebooks/bab04/P04_data_sintesis_algoritma.ipynb` | Menunggu keputusan | Tidak dirujuk naskah; aturan skor jembatannya berbeda dari P04A dan menimpa CSV jembatan. |
+| Sitasi algoritma Bab 4 (ridge, lasso, CART, random forest, gradient boosting, SVM, k-NN, k-means, DBSCAN, Isolation Forest, LOF, PCA, scikit-learn) | Menunggu persetujuan | Belum ada sitasi di teks kecuali Naser (2023) dan scikit-learn (n.d.). Sumber perlu diverifikasi sebelum ditulis. |
+| Uji `Orange_Bab4_Regresi.ows` di Orange 3.41 | Belum diuji | Struktur: 8 widget, 7 tautan; berkas tidak menyimpan jalur data. |
+| Bab 4–6 dijalankan dari `praktikum/babNN/`, bab lain dari akar repositori | Catatan | Aturan berbeda antarbab membingungkan; seragamkan setelah audit Bab 5–6. |
