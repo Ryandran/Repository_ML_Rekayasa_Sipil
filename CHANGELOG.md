@@ -5,7 +5,12 @@
 - Tahap 7: Gambar 3.10–3.11 (rendering netral gaya notebook dari kode di naskah, bukan tangkapan layar Colab asli) dan satu kalimat versi scikit-learn di Bab 12, 14, 15.
 - Tahap 8: istilah baku Bab 5–6.
 - Tahap 9: konsolidasi pesan kebocoran data yang berulang (Bab 3–6) menjadi satu penjelasan kanonik (subbab 3.4, 4.4, 6.4) dengan rujukan silang; 8 paragraf berubah.
-- Istilah baku Bab 7–15 belum dikerjakan.
+- Istilah baku Bab 7–15 belum dikerjakan (lihat Tahap 12).
+
+## Naskah Tahap 12 (book/)
+
+- Tahap 10–12: istilah baku (pengamatan, rerata, prapemrosesan, nonlinear, data latih/uji) diterapkan pada Bab 7–15; 87 paragraf berubah, kode dan daftar pustaka tidak disentuh.
+- Gambar 3.10–3.11 memakai rendering netral bergaya notebook; bab lain hanya memuat gambar konseptual, sehingga aturan ini belum berlaku di tempat lain.
 
 ## 2026-11-18 — P15A: pencarian data Bab 14/15
 - Audit asal-usul 36 CSV/`.tab`: semua berasal dari notebook penulisnya, kecuali `praktikum/bab15/slope_campaign_synthetic.csv` yang berupa salinan manual dari keluaran P14A (byte-identik).
