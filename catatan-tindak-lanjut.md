@@ -2,20 +2,50 @@
 
 Daftar hal yang belum selesai. Perbarui atau hapus butir yang sudah dikerjakan.
 
+## Rencana penuntasan versi ini (disusun 2026-11-18)
+
+Dasar: Tahap 15 memiliki 15 bab, 64 gambar (semua dirujuk), keluaran notebook segar (scikit-learn 1.8.0, PR #10 dan #12), dan istilah baku. Temuan yang belum selesai: daftar Referensi Bab 15 hanya berisi satu entri (Naser, 2023); sitasi Bab 5–15 belum diverifikasi dan Bab 4 masih punya algoritma tanpa sitasi (Naive Bayes, jaringan saraf, ANFIS, LSTM, GNN, transformer, fuzzy c-means); naskah 201 halaman (README menargetkan 250–300); README usang; belum ada `LICENSE`.
+
+**Keputusan Ryan (2026-11-18):** versi ini memuat **Kata Pengantar, Lampiran, Glosarium, dan satu bab computer vision**. Belum diputuskan: target jumlah halaman, lisensi kode dan data, serta apakah `book/` tetap di repositori.
+
+| Tahap | Isi | Status | Keluaran |
+|---|---|---|---|
+| A. Keputusan lingkup | Lingkup produk (selesai); target halaman, lisensi, status `book/` | Sebagian: tiga butir terbuka | Catatan di `gaya-selingkung.md` |
+| B. Integritas sumber | Audit sitasi Bab 5–15 per batch; isi Referensi Bab 15; tutup celah sitasi Bab 4. Sumber dicocokkan dengan laman penerbit; yang belum ketemu diberi `[perlu sumber]`, tidak dikarang | Belum | Naskah Tahap 16 + log verifikasi |
+| C. Konsistensi isi | Padatkan pengulangan di Bab 3 dan periksa pola serupa di bab lain; periksa batas "kita" (≤ 5 per bab) dan rujukan silang antarbab | Belum | Naskah Tahap 17 |
+| D. Kelengkapan produk | Kata Pengantar; Lampiran (mengikuti keputusan 27 di `gaya-selingkung.md`: Lampiran A–C, tabel A.1/B.1/C.1); Glosarium Indonesia–Inggris (keputusan 28); daftar tabel; bab computer vision | Belum | Naskah Tahap 18 |
+| E. Penutupan | Sinkronkan README dan CHANGELOG, bersihkan catatan ini, buat PDF, tinjau tata letak, kirim ke pembaca sejawat, tag rilis draf | Belum | Tag `v0.x-draf` |
+
+Urutan: A lebih dulu; B dan C dapat jalan paralel; D menyusul; E terakhir.
+
+### Rincian tahap D: bab computer vision
+
+- Rancangan awal ada di dokumen proyek `claude/rancangan-bab-visi-komputer.md` dan `claude/notebook/P09_visi_komputer.ipynb` (lineage lama); dipakai sebagai acuan, bukan disalin mentah.
+- Isi minimal: dasar deteksi objek (YOLO), kasus APD pada konstruksi, evaluasi (mAP, precision, recall) dan pembagian data tanpa kebocoran antarframe/lokasi, serta batas penggunaan. Gambar 3.x (subbab 3.8, citra untuk computer vision) menjadi pengantar.
+- Data: hanya data sintetis atau data milik sendiri. Data jalan RDD Hari Jalan 2023 milik tim Ryan boleh dipertimbangkan; ikuti `claude/rdd23/README_RDD23_bersih.md` dan pastikan tidak ada identitas pribadi di citra.
+- Bab baru menambah: notebook `PxxA` (pembangkit) dan `PxxB` (analisis), folder `praktikum/` dan `gambar/`, rujukan silang dari Bab 3, 5, 12, dan 13, serta entri Glosarium. Penomoran bab perlu diputuskan lebih dulu (menyisip menggeser Bab 10–15 atau ditaruh sebagai bab berikutnya setelah Bab 15) dan gambar diurutkan ulang.
+- Sitasi bab ini harus diverifikasi sebelum dimasukkan; tidak ada rujukan yang dikarang.
+
+### Risiko
+
+- Audit sitasi paling lama dan paling rentan salah; hasilnya perlu diperiksa sampling oleh Ryan.
+- Angka Random Forest berubah pada scikit-learn ≥ 1.9; `requirements.txt` tetap `<1.9`.
+- Setiap perubahan teks dapat menggeser nomor gambar dan halaman; rujukan, Daftar Isi, Gambar, dan Tabel diperiksa ulang di akhir tiap tahap.
+
 ## Bab 3 (diaudit 2026-11-18)
 
 | Butir | Status | Keterangan |
 |---|---|---|
-| Ambil ulang tangkapan layar Gambar 3.10 dan 3.11 | Menunggu (Ryan) | Tampilan lama memakai folder unggahan `Bab3_Paket/Data`. Ambil setelah struktur repositori final: jalankan P03A lalu P03B di Colab, tangkap sel yang memuat `pd.read_csv("praktikum/bab03/data_sintesis_beton.csv")` beserta panel Files (folder `praktikum/bab03`). Setelah itu hapus kalimat catatan tangkapan layar lama di paragraf pengantar kode (subbab 3.5.1). |
-| Padatkan pengulangan pesan kebocoran (muncul 5 kali), "pencilan bukan berarti kesalahan" (2 kali), dan pengelompokan citra saat membagi data (3 kali) | Disetujui, ditunda | Kerjakan setelah Bab 6 selesai agar rujukan silang sudah final. |
-| Uji workflow `Orange_Bab3.ows` di Orange 3.41 | Belum diuji | Hanya struktur XML yang diperiksa (5 widget, 4 tautan). Berkas tidak menyimpan jalur data. |
-| Terapkan istilah baku (pengamatan, rerata, simpangan baku, pelatihan/data uji, prapemrosesan, antarkelompok) ke Bab 1–2 dan Bab 4–15 | Belum | Bab 3 sudah diseragamkan. Tambahkan ke `gaya-selingkung.md`. |
+| Ambil ulang tangkapan layar Gambar 3.10 dan 3.11 | Selesai: diganti rendering netral (keputusan Ryan, 2026-11-18; Tahap 7) | Tampilan lama memakai folder unggahan `Bab3_Paket/Data`. Ambil setelah struktur repositori final: jalankan P03A lalu P03B di Colab, tangkap sel yang memuat `pd.read_csv("praktikum/bab03/data_sintesis_beton.csv")` beserta panel Files (folder `praktikum/bab03`). Setelah itu hapus kalimat catatan tangkapan layar lama di paragraf pengantar kode (subbab 3.5.1). |
+| Padatkan pengulangan pesan kebocoran (muncul 5 kali), "pencilan bukan berarti kesalahan" (2 kali), dan pengelompokan citra saat membagi data (3 kali) | Disetujui; dijadwalkan di Tahap C | Syarat (Bab 6 selesai) sudah terpenuhi. |
+| Uji workflow `Orange_Bab3.ows` di Orange 3.41 | Selesai: dijalankan tanpa antarmuka saat Tahap 13 (tangkapan layar Gambar 3.4–3.9) | Hanya struktur XML yang diperiksa (5 widget, 4 tautan). Berkas tidak menyimpan jalur data. |
+| Terapkan istilah baku (pengamatan, rerata, simpangan baku, pelatihan/data uji, prapemrosesan, antarkelompok) ke Bab 1–2 dan Bab 4–15 | Selesai (Tahap 10–12; Bab 1–2 tidak memuat istilah itu); aturan ada di `gaya-selingkung.md` v0.11 | Bab 3 sudah diseragamkan. Tambahkan ke `gaya-selingkung.md`. |
 | Verifikasi akhir sitasi Bab 3 (DOI dan halaman) | Selesai 2026-11-18 | Rubin (1976), Little & Rubin (2019), Tukey (1977), Kraskov dkk. (2004), Demšar dkk. (2013), Kaufman dkk. (2012) dicocokkan dengan laman penerbit atau repositori resmi. Judul pada Referensi belum dicetak miring (mengikuti entri yang sudah ada). |
 
 ## Seluruh buku
 
 - Selisih CSV saat dibangkitkan ulang: selesai diselidiki, lihat bagian "Reproduksibilitas CSV Bab 12/14/15" di bawah.
-- Keluaran notebook P04B, P06A, dan P07 masih memuat jalur lokal Windows.
+- ~~Keluaran notebook P04B, P06A, dan P07 masih memuat jalur lokal Windows.~~ Selesai: keluaran disegarkan (PR #10) dan tidak lagi memuat jalur lokal.
 - Keputusan LICENSE dan LICENSE-DATA, serta apakah `book/` tetap di repositori.
 
 ## Bab 4 (diaudit 2026-11-18)
