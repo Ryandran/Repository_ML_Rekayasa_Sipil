@@ -9,13 +9,20 @@
 - Angka pada gambar sama dengan angka di teks naskah. P08B, P09B, P09C dijalankan di salinan sementara (notebook di repositori tidak diubah).
 - Nomor gambar per bab diurutkan ulang; Daftar Gambar disusun ulang (64 gambar).
 
+## Notebook: penyegaran keluaran (PR terpisah)
+
+- Keluaran tersimpan dijalankan ulang dengan scikit-learn 1.8.0 untuk P03B, P04B, P05, P06B, P07, P10B, P12B, P13B, P14B, P15A; metadata kernel tidak diubah. Notebook generator (P06A dst.) tidak dijalankan ulang agar data tidak bergeser.
+- P07: judul grafik PDP diubah menjadi "Partial dependence: rerata model"; istilah baku (pengamatan, nonlinear) disesuaikan; P03B memakai "rerata". Sel SHAP/LIME opsional (pustaka tidak terpasang) dipertahankan dengan keluaran lama.
+- P12B dan P13B kini menyimpan gambar keluaran.
+- CSV di `praktikum/` yang ditulis ulang oleh notebook dikembalikan ke versi repositori.
+
 ## Naskah Tahap 14 (book/)
 
 - Dua belas gambar keluaran notebook (dirender netral dari sel yang dijalankan ulang dengan scikit-learn 1.8): Gambar 4.3; 5.4–5.5; 6.4–6.6; 7.2–7.5 (permutation importance, PDP/ICE, kasus lokal, pohon surrogate); 10.1 (P10B); 12.3 (P12B). Berkas di `gambar/babNN/`; perender di `skrip/render_keluaran_notebook.py`.
 - Gambar augmentasi (dulu 9.2, di akhir bab sesudah Latihan) dipindah ke subbab 9.1.2 dan menjadi Gambar 9.1; Gambar Orange menjadi 9.2. Kalimat rujukan ditambahkan.
 - Nomor gambar per bab diurutkan ulang menurut kemunculan; Daftar Gambar disusun ulang.
-- Catatan: keluaran yang tersimpan di notebook P05 (sel 4) dan P07 (sel 11) sedikit berbeda dari hasil jalan ulang (mis. P07 fidelity R² 0,617 tersimpan vs 0,616 segar, sama dengan naskah). Gambar memakai hasil jalan ulang. Notebook di repositori belum disegarkan.
-- Catatan: 24 gambar lama (mis. 1.1–3.9, 5.1–5.2, 7.1, 11.1–15.1) belum punya kalimat rujukan di teks.
+- Catatan: keluaran yang tersimpan di notebook P05 (sel 4) dan P07 (sel 11) sedikit berbeda dari hasil jalan ulang (mis. P07 fidelity R² 0,617 tersimpan vs 0,616 segar, sama dengan naskah). Gambar memakai hasil jalan ulang. Notebook di repositori disegarkan pada PR #10.
+- Catatan: 24 gambar lama belum punya kalimat rujukan di teks; dilengkapi pada Tahap 15.
 
 ## Naskah Tahap 13 (book/)
 
