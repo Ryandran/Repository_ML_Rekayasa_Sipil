@@ -1,5 +1,9 @@
 # Catatan Perubahan
 
+## 2026-11-18 — P15A: pencarian data Bab 14/15
+- Audit asal-usul 36 CSV/`.tab`: semua berasal dari notebook penulisnya, kecuali `praktikum/bab15/slope_campaign_synthetic.csv` yang berupa salinan manual dari keluaran P14A (byte-identik).
+- P15A kini mencari `slope_campaign_synthetic.csv` di `praktikum/bab15/`, `praktikum/bab14/`, lalu direktori kerja, dengan pesan galat berbahasa Indonesia. Logika dan keluaran notebook tidak berubah.
+
 ## 2026-11-18 — Lanjutan Bab 4: notebook ganda dihapus, direktori kerja Bab 4–7 diseragamkan
 - `notebooks/bab04/P04_data_sintesis_algoritma.ipynb` dihapus (tidak dirujuk naskah; menimpa CSV jembatan).
 - P04A, P05A, P06A menulis ke `praktikum/babNN/data_babN` bila dijalankan dari akar repositori, dan ke `data_babN` di direktori kerja bila folder `praktikum/babNN` tidak ada (Colab). P04B, P05B, P06B, P07 mencari kedua lokasi.

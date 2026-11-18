@@ -26,3 +26,8 @@ Daftar hal yang belum selesai. Perbarui atau hapus butir yang sudah dikerjakan.
 | Sitasi algoritma Bab 4 (ridge, lasso, random forest, gradient boosting, SVM, k-NN, k-means, Ward, DBSCAN, Isolation Forest, LOF, PCA, scikit-learn) | Selesai 2026-11-18 (Tahap6) | 13 sumber dicocokkan dengan laman penerbit atau repositori resmi. DOI Hoerl & Kennard (1970) dan Tibshirani (1996) belum terverifikasi sehingga tidak dicantumkan; nomor terbitan Cortes & Vapnik (1995) tidak dicantumkan karena tidak tertera pada sumber yang diperiksa. CART (Breiman dkk., 1984) tidak dikutip. Naive Bayes, jaringan saraf, ANFIS, LSTM, GNN, transformer, dan fuzzy c-means belum bersitasi. |
 | Uji `Orange_Bab4_Regresi.ows` di Orange 3.41 | Belum diuji | Struktur: 8 widget, 7 tautan; berkas tidak menyimpan jalur data. |
 | Bab 4–6 dijalankan dari `praktikum/babNN/`, bab lain dari akar repositori | Selesai: semua bab dijalankan dari akar repositori; Colab tetap memakai `data_babN` di direktori kerja |
+
+## Audit asal-usul CSV (2026-11-18)
+- 36 CSV/`.tab` di `praktikum/` dibandingkan dengan hasil menjalankan ulang seluruh notebook penulisnya pada salinan bersih (scikit-learn 1.8.0). 18 identik byte; 14 hanya beda digit terakhir (≤ 1e-13, versi numpy); 4 berkas metrik model (P12 dua berkas, P14, P15 `repeated_group_splits`) berbeda karena dihitung dari data hasil bangkitan ulang, sementara dari CSV data di repositori hasilnya identik (≤ 1,8e-15).
+- `.tab` Bab 9 dan 10 keluar dengan akhir baris CRLF dari notebook (modul `csv`); di repositori berakhir LF. Isi sama; tidak diubah.
+- `praktikum/bab15/slope_campaign_synthetic.csv` tidak ditulis notebook mana pun; salinan manual dari Bab 14. Ditangani dengan pencarian jalur di P15A.
