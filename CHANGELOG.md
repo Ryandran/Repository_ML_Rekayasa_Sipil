@@ -1,5 +1,13 @@
 # Catatan Perubahan
 
+## Tahap 27–30: daftar bernomor, koreksi sitasi, contoh tambahan, Lampiran D (naskah Tahap 30)
+
+- Tahap 27: sembilan daftar bernomor dimulai ulang dari 1; butir bernomor ganda di Bab 7 dibersihkan. Lundberg & Lee (2017) dilengkapi halaman; judul Jing dkk. (2025) disesuaikan dengan versi jurnal; Lones (2024) dikutip dari versi jurnal *Patterns* (vol. 5, artikel 101046). Wang dkk. (2024) dan Jing dkk. (2025) terverifikasi dari sitasi resmi penerbit.
+- Tahap 28: Bab 16 memuat contoh laju belajar (L(w) = (w − 3)²) dan contoh satu langkah propagasi balik pada jaringan 2-2-1, dengan Latihan 10. Ditambahkan Lampiran D (lembar kerja protokol dan audit; Tabel D.1–D.4).
+- Tahap 29: definisi fidelity penjelasan, baseline, dan perturbasi di Bab 7 dijadikan butir tersendiri dan tugas pertemuan merujuk Tabel D.4. Bab 10 memuat contoh ambang keputusan (1.000 jembatan; ilustrasi konseptual) dan lembar audit terisi.
+- Tahap 30: Bab 2 memuat subbab 2.15, contoh kedua spesifikasi tugas (kuat tekan beton, dataset sintetis Bab 3) dengan sepuluh unsur Tabel 2.2 diberi penanda. Tanpa sitasi baru.
+- Naskah 244 halaman. Rilis: `naskah-tahap30`.
+
 ## Verifikasi Luleci dkk. (2024) dan penyeragaman "dkk." (naskah Tahap 24–26)
 
 - Luleci dkk. (2024) di Bab 12 terverifikasi dari halaman penerbit dan sitasi resmi (*Automation in Construction*, vol. 165, artikel 105546, doi 10.1016/j.autcon.2024.105546); penanda `[perlu verifikasi]` dan catatan terkait dihapus. Volume 168 yang sempat tertulis dikoreksi menjadi 165.
