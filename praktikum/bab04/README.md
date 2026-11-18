@@ -4,13 +4,13 @@
 
 ## Berkas
 - `P04A_generator_data_sintesis.ipynb` — generator empat dataset sintesis ber-seed tetap.
-- `P04B_analisis_algoritma.ipynb` — pemeriksaan skema, contoh regresi, clustering, PCA dan deteksi anomali. Jalankan setelah P04A.
+- `P04B_analisis_algoritma.ipynb` — pemeriksaan skema; klasifikasi jembatan dengan ambang peluang; baseline, pipeline k-NN, dan perbandingan regresi (MAE, RMSE, lima pembagian acak); clustering k-means dan hierarkis, PCA; serta deteksi anomali. Jalankan setelah P04A.
 - `Orange_Bab4_Regresi.ows` — workflow perbandingan model regresi di Orange 3.41.0.
 - `../../gambar/bab04/Gambar_4_1_Peta_Keluarga_Algoritma.svg` — ilustrasi peta keluarga algoritma.
 
 ## Menjalankan latihan
 1. Buka P04A di Google Colab atau Jupyter lalu jalankan seluruh sel. Notebook membuat folder `data_bab4` di folder kerja dengan empat CSV. Data ini dibuat oleh aturan simulasi; bukan hasil uji material, inspeksi, atau pengukuran sensor lapangan.
-2. Jalankan P04B pada folder kerja yang sama. Notebook memperlihatkan kandidat klasifikasi jembatan, regresi beton, clustering, PCA, serta penyaringan anomali. Hasilnya merupakan demonstrasi alur dan tidak menyatakan algoritma terbaik.
+2. Jalankan P04B pada folder kerja yang sama (di komputer lokal: `praktikum/bab04/`; P04B juga mencari `praktikum/bab04/data_bab4` dari akar repositori). Notebook memperlihatkan kandidat klasifikasi jembatan, baseline dan regresi beton, clustering, PCA, serta penyaringan anomali. Hasilnya merupakan demonstrasi alur dan tidak menyatakan algoritma terbaik.
 3. Untuk Orange, buka OWS lalu di widget **File** pilih `data_bab4/data_sintesis_kuat_tekan.csv`. Pada **Select Columns**, periksa `kuat_tekan_MPa` sebagai target, `id_spesimen` sebagai metadata dan delapan kolom lain sebagai fitur. Evaluasi beberapa learner melalui **Test and Score**; pembahasan indikator ada pada Bab 5.
 4. Dataset perkerasan memiliki `label_pembangkit` untuk pemeriksaan sesudah clustering. Keluarkan label dan ID saat membentuk kelompok; label boleh ditinjau setelahnya untuk memahami generator. Dataset sensor memuat flag generator, bukan diagnosis.
 

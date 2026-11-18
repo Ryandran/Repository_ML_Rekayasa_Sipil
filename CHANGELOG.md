@@ -1,5 +1,11 @@
 # Catatan Perubahan
 
+## 2026-11-18 — Audit Bab 4 (notebook P04B, README, naskah)
+- P04B diperluas agar sesuai panduan Bab 4: baseline rerata, pipeline k-NN (dengan dan tanpa penskalaan), regresi linear/pohon/random forest/gradient boosting dengan MAE, RMSE, dan rerata residual, lima pembagian acak, regresi logistik dengan ambang peluang, perbandingan k-means dan clustering hierarkis, tumpang tindih flag anomali. Pencarian folder data otomatis; keluaran dijalankan ulang (jalur lokal Windows di keluaran lama hilang).
+- Temuan: `P04_data_sintesis_algoritma.ipynb` bukan salinan P04A; aturan skor jembatannya berbeda (koefisien dan ambang) sehingga menimpa label `data_sintesis_prioritas_jembatan.csv` di 277 baris bila dijalankan. P04A mereproduksi keempat CSV di repositori secara identik. Berkas ganda belum dihapus; menunggu keputusan.
+- `requirements.txt`: `scikit-learn>=1.4`.
+- Naskah Tahap5 (`book/`): perbaikan teks Bab 4, hasil P04B dikutip, Latihan 3 dan 5 dihubungkan dengan notebook, istilah dibakukan.
+
 ## 2026-11-18 — Sinkronisasi Bab 3 (notebook, README, naskah)
 - P03B ditulis ulang agar sesuai panduan Bab 3: grafik (histogram, scatter plot berwarna menurut umur, box plot menurut umur), pencarian berkas CSV otomatis (akar repositori, folder Colab lama, folder kerja), toleransi pembulatan rasio air-semen, mutual information (`random_state=30303`), dan latihan diagnosis pada salinan rusak (baris terdampak, ID ganda, penanda IQR, ilustrasi pemulihan nilai air). Keluaran dalam bahasa Indonesia. CSV sumber tidak diubah dan hasil P03A tetap identik.
 - P03A: kode tidak berubah; ditambah penjelasan cara menjalankan.
