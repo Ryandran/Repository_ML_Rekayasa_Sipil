@@ -1,11 +1,10 @@
 # Catatan Perubahan
 
-## Penomoran tabel dan Daftar Tabel (naskah Tahap 19)
+## Penomoran tabel dan Daftar Tabel (naskah Tahap 20)
 
-- Audit 108 tabel naskah. 89 tabel isi Bab 1–17 dinomori berurutan per bab dengan judul seragam (`Tabel n.m  Judul`); sebelumnya hanya sekitar 17 yang berjudul dan urutannya tidak selalu cocok (Bab 10 memuat 10.1, 10.3, 10.2; Bab 7 merujuk nomor yang tidak sesuai urutan tabel).
-- Rujukan lama di Bab 7 disesuaikan (7.3→7.1, 7.1→7.2, 7.4→7.3). Setiap tabel dirujuk sedikitnya sekali sebelum tabel muncul; 77 kalimat rujukan ditambahkan pada paragraf sebelum tabel. Tidak ada isi tabel yang diubah.
-- Tabel Definisi dan Blueprint di akhir bab serta tabel satu baris pembungkus gambar tidak dinomori.
-- Daftar Tabel (96 entri, termasuk Tabel A.1–C.1) ditambahkan setelah Daftar Gambar. Naskah menjadi 239 halaman.
+- Aturan: hanya tabel yang dirujuk naskah yang diberi nomor dan judul (`Tabel n.m  Judul`). Tabel lain tetap tanpa nomor. Ada 19 tabel isi (Bab 2: 2.1–2.2; Bab 3: 3.1–3.5; Bab 4: 4.1–4.2; Bab 5: 5.1; Bab 7: 7.1–7.4; Bab 9: 9.1–9.2; Bab 10: 10.1–10.3) ditambah 7 tabel lampiran (A.1–C.1).
+- Rujukan lama di Bab 5 (5.3→5.1) dan Bab 7 (7.3→7.1, 7.1→7.2, 7.4→7.3, 7.5→7.4) disesuaikan dengan urutan baru. Setiap tabel dirujuk sebelum muncul; 10 kalimat rujukan ditambahkan. Isi tabel tidak diubah.
+- Daftar Tabel (26 entri) ditambahkan setelah Daftar Gambar. Naskah menjadi 233 halaman.
 
 ## Kata Pengantar, Lampiran A–C, dan Glosarium (naskah Tahap 18)
 
