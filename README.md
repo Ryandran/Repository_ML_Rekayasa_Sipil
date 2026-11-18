@@ -8,7 +8,7 @@ Notebook, data sintetis, alur kerja Orange, dan ilustrasi pendamping buku ajar *
 
 | Folder | Isi |
 |---|---|
-| `book/` | Satu berkas naskah versi terbaru (`Buku_Ajar_ML_Rekayasa_Sipil_Suntingan_Bahasa_TahapNN.docx`); versi sebelumnya tidak disimpan di folder ini (riwayat ada di git) |
+| *(tidak ada folder `book/`)* | Naskah buku (DOCX/PDF) tidak disimpan di repositori; versi terbaru dibagikan lewat halaman **Releases** GitHub. |
 | `notebooks/babNN/` | Notebook Python per bab. Notebook berawalan `PxxA` adalah pembangkit data sintetis; `PxxB` dan seterusnya adalah analisisnya |
 | `praktikum/babNN/` | Alur kerja Orange (`.ows`), data latihan (`.csv`, `.tab`), dan `README.md` bab berisi urutan langkah serta catatan interpretasi |
 | `gambar/babNN/` | Ilustrasi vektor (SVG) pendamping naskah |
@@ -62,6 +62,6 @@ Rujukan akademik dicantumkan pada naskah dan/atau README bab terkait. PDF sumber
 |---|---|
 | Kode (notebook `.ipynb`, skrip `skrip/`) | MIT, lihat `LICENSE` |
 | Data sintetis, alur kerja Orange, README bab, dan ilustrasi | CC BY 4.0, lihat `LICENSE-DATA.md` |
-| Naskah buku (`book/`) | Hak cipta penulis, seluruh hak dilindungi (direncanakan terbit melalui penerbit) |
+| Naskah buku (DOCX/PDF di Releases) | Hak cipta penulis, seluruh hak dilindungi (direncanakan terbit melalui penerbit) |
 
 Perubahan dicatat di `CHANGELOG.md`.

@@ -1,5 +1,9 @@
 # Catatan Perubahan
 
+## Folder book/ dikeluarkan dari repositori
+
+- Atas keputusan penulis, `book/` dihapus; naskah versi akhir (DOCX dan PDF, Tahap 16) dibagikan lewat Releases GitHub. Riwayat naskah lama tetap tersimpan di riwayat git.
+
 ## Bab 16 Pengantar deep learning (naskah Tahap 16)
 
 - Bab baru setelah Bab 15 (11 subbab, 6 gambar, 3 tabel, Definisi, Blueprint, 9 latihan, 7 referensi; naskah menjadi 209 halaman). `book/` kini memuat Tahap 16 menggantikan Tahap 15.

@@ -14,6 +14,6 @@ Data bersifat sintetis dan bukan hasil pengukuran lapangan, pengujian material, 
 
 ## Yang tidak tercakup
 
-- **Naskah buku** (`book/`) dilindungi hak cipta penulis, seluruh hak dilindungi. Naskah tidak ikut dalam lisensi di atas karena buku direncanakan terbit melalui penerbit.
+- **Naskah buku** (DOCX/PDF di halaman Releases) dilindungi hak cipta penulis, seluruh hak dilindungi. Naskah tidak ikut dalam lisensi di atas karena buku direncanakan terbit melalui penerbit.
 - **Kode** (notebook dan skrip) dilisensikan terpisah di bawah MIT; lihat `LICENSE`.
 - Tangkapan layar perangkat lunak pihak ketiga (Orange Data Mining) hanya memperlihatkan keluaran program pada data sintetis repositori ini; nama dan merek perangkat lunak itu tetap milik pemiliknya.
