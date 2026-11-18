@@ -1,5 +1,14 @@
 # Catatan Perubahan
 
+## Naskah Tahap 15 (book/)
+
+- 23 gambar lama yang belum dirujuk di teks (Gambar 1.1–1.3, 2.1–2.2, 3.1–3.9, 5.1–5.2, 7.1, 10.2, 11.1, 12.1, 13.1, 14.1, 15.1 menurut nomor Tahap 14) kini masing-masing memiliki satu kalimat rujukan sebelum gambar. Gambar 3.11 sudah dirujuk bersama Gambar 3.10 sehingga tidak ditambah.
+- Gambar 10.2 dipindah dari bawah judul "Pertanyaan dan latihan" ke akhir Bab 10 sebelum judul itu agar tidak tersisip di antara soal.
+- Dua belas gambar keluaran notebook baru: P03B (histogram, scatter, box plot), P04B (clustering/PCA; Isolation Forest), P05 (kurva beban–lendutan), P08B (estimasi efek), P09B (klasifikasi spalling), P09C (regresi simbolik), P12B (tiga split; pemeriksaan visual), P13B (monitor bulanan), P14B (random vs grup), P15A (sensitivitas). Setiap gambar memiliki kalimat rujukan. Bab 1, 2, 11 tidak memiliki notebook.
+- Gambar P07 (PDP/ICE dan kasus lokal) dirender ulang dengan judul "Partial dependence: rerata model".
+- Angka pada gambar sama dengan angka di teks naskah. P08B, P09B, P09C dijalankan di salinan sementara (notebook di repositori tidak diubah).
+- Nomor gambar per bab diurutkan ulang; Daftar Gambar disusun ulang (64 gambar).
+
 ## Naskah Tahap 14 (book/)
 
 - Dua belas gambar keluaran notebook (dirender netral dari sel yang dijalankan ulang dengan scikit-learn 1.8): Gambar 4.3; 5.4–5.5; 6.4–6.6; 7.2–7.5 (permutation importance, PDP/ICE, kasus lokal, pohon surrogate); 10.1 (P10B); 12.3 (P12B). Berkas di `gambar/babNN/`; perender di `skrip/render_keluaran_notebook.py`.
