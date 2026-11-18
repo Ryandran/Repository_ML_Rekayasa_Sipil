@@ -6,7 +6,7 @@
 - `P06A_generator_data_sintesis.ipynb` — generator data; terpisah dari latihan analisis.
 - `P06B_praktik_orange_python.ipynb` — analisis Python atas keluaran generator dan panduan pembandingan Orange.
 - `Orange_Bab6_Regresi.ows` — workflow perbandingan learner regresi.
-- `SVG/` — dua ilustrasi pendamping: alur praktik dan perbedaan tiga tugas ML.
+- `../../gambar/bab06/` — dua ilustrasi pendamping: alur praktik dan perbedaan tiga tugas ML.
 
 Notebook pada bab ini disimpan di folder paket ini.
 
@@ -20,7 +20,6 @@ Notebook pada bab ini disimpan di folder paket ini.
 
 Dataset sepenuhnya sintetis. Rumus generator sengaja dibuat transparan dan tidak mewakili hasil uji Marshall atau kondisi jalan sesungguhnya. Notebook dan workflow perlu disesuaikan dengan versi Python, pustaka, dan Orange yang tersedia; widget File perlu diarahkan ulang setelah folder dipindahkan.
 
-## Status pemeriksaan
 
 ## Catatan penggunaan di repository
 

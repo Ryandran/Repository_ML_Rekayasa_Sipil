@@ -2,7 +2,7 @@
 
 Notebook, data sintetis, alur kerja Orange, dan ilustrasi pendamping buku ajar *Machine Learning untuk Rekayasa Sipil* (Program Magister Teknik Sipil).
 
-> **Status: draf, belum dirilis.** Isi repositori masih bisa berubah mengikuti penyusunan buku. Naskah kerja saat ini (Tahap 30, rilis `naskah-tahap30`) 244 halaman, sudah memuat Kata Pengantar, Lampiran A–D, Glosarium, dan Daftar Tabel; sasaran dilonggarkan menjadi sekitar 245 halaman tanpa pengisi. Verifikasi seluruh sumber dan klaim belum selesai.
+> **Status: draf, belum dirilis.** Isi repositori masih bisa berubah mengikuti penyusunan buku. Naskah kerja saat ini (Tahap 33, rilis `naskah-tahap33`) 244 halaman, sudah memuat Kata Pengantar, Lampiran A–D, Glosarium, dan Daftar Tabel; sasaran dilonggarkan menjadi sekitar 245 halaman tanpa pengisi. Verifikasi seluruh sumber dan klaim belum selesai.
 
 ## Isi
 
@@ -11,7 +11,7 @@ Notebook, data sintetis, alur kerja Orange, dan ilustrasi pendamping buku ajar *
 | *(tidak ada folder `book/`)* | Naskah buku (DOCX/PDF) tidak disimpan di repositori; versi terbaru dibagikan lewat halaman **Releases** GitHub. |
 | `notebooks/babNN/` | Notebook Python per bab. Notebook berawalan `PxxA` adalah pembangkit data sintetis; `PxxB` dan seterusnya adalah analisisnya |
 | `praktikum/babNN/` | Alur kerja Orange (`.ows`), data latihan (`.csv`, `.tab`), dan `README.md` bab berisi urutan langkah serta catatan interpretasi |
-| `gambar/babNN/` | Ilustrasi vektor (SVG) pendamping naskah |
+| `gambar/babNN/` | Ilustrasi (SVG) dan tangkapan layar Orange serta keluaran notebook (PNG) yang dipakai pada naskah; nama berkas memuat nomor gambar |
 
 ### Peta bab
 

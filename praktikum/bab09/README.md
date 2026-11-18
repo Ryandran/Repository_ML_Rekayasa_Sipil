@@ -18,12 +18,11 @@
 
 Data seluruhnya sintetis dan bukan catatan uji, rekomendasi struktur, atau model keselamatan. Energi yang dicetak merupakan estimasi sensitivitas berdasarkan daya asumsi, bukan hasil pengukuran perangkat. Oversampling demonstratif adalah interpolasi antarpasangan kelas minoritas; ia bukan implementasi resmi SMOTE.
 
-## Status pemeriksaan (16 November 2026)
+## Hasil acuan
 - P09A, P09B, dan P09C dijalankan ulang seluruh sel kodenya pada runtime Python Orange 3.41.0. Ketiganya selesai; joblib mengeluarkan peringatan lingkungan saat memeriksa jumlah core fisik, tetapi seluruh fit dan pencarian selesai.
 - Generator menghasilkan 1.800 kolom RC (prevalensi label spalling 0,141) dan 1.400 balok. P09B menghasilkan 190 positif pada train dan 63 pada test; interpolasi hanya menyeimbangkan train. Pada run audit, logistic regression berbobot kelas memberi F1 0,433, sedangkan GridSearchCV memilih F1 validasi 0,463 dan F1 test 0,403. Timing berubah antar-run; angka emisi tetap proksi dari daya asumsi.
 - P09C mereproduksi DGP balok: kandidat produk memberi MAE 7,14 kN·m in-domain dan 9,28 pada subset fy tinggi; model aditif 32,32 dan 130,07; Random Forest 15,29 dan 159,88. Hasil ini hanya validasi pada data sintesis yang DGP-nya diketahui.
 - OWS memuat 1.800 baris dari `.tab`; kelas target adalah `spalling`, metadata adalah `column_id`, dan Distributions/Scatter Plot menerima data. OWS hanya untuk eksplorasi; pembandingan model dan augmentasi berlangsung di Python.
-- DOCX revisi berisi sekitar 4.123 kata, dua tabel, dan satu gambar. `soffice.exe` tidak tersedia; jumlah halaman dan QA visual belum terverifikasi. Target halaman Bab 9 tetap sasaran editorial, bukan hasil render.
 
 ## Catatan penggunaan di repository
 

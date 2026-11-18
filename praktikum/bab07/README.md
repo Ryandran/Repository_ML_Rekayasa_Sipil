@@ -16,7 +16,7 @@
 ## Batas penggunaan
 Data sepenuhnya sintetis; fungsi generator bukan hasil uji laboratorium atau hukum material. Semua penjelasan menggambarkan model pada data sintesis. Penjelasan fitur bukan bukti kausal, mekanisme material, rekomendasi desain, atau sertifikasi emisi.
 
-## Status pemeriksaan (16 November 2026)
+## Hasil acuan
 - P07 dijalankan seluruh selnya pada runtime Orange 3.41.0; permutation importance, PDP/ICE, pohon dangkal, dan contoh lokal berjalan. SHAP/LIME tidak tersedia dalam runtime tersebut dan bagian opsional dilewati.
 - OWS dijalankan melalui runtime Orange 3.41.0 dengan salinan uji sementara yang diarahkan ke CSV Marshall. Workflow selesai tanpa error; peringatan deprecation pada widget Tree tidak mengganggu hasil.
 - Jalur CSV tidak disimpan di OWS terbitan sehingga tetap portabel. Saat membuka OWS, pilih CSV dari generator Bab 6. Jika Orange tidak memulihkan peran target secara otomatis, tetapkan `stability_kN` sebagai target dan `mix_id` sebagai metadata pada Select Columns.
