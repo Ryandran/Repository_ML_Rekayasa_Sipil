@@ -5,6 +5,8 @@
 - P03A: kode tidak berubah; ditambah penjelasan cara menjalankan.
 - README Bab 3: folder `Data/` yang sudah tidak ada diganti `praktikum/bab03/`; berkas Orange `.tab` atau `.csv` dijelaskan.
 - Naskah (Tahap2): jalur kode, langkah Orange, toleransi pembulatan, mutual information, dan catatan salinan rusak disesuaikan dengan notebook.
+- Naskah Tahap4 (`book/`): audit Bab 3 — sitasi untuk MCAR/MAR/MNAR (Rubin, 1976; Little & Rubin, 2019), aturan IQR dan box plot (Tukey, 1977), mutual information (Kraskov dkk., 2004), kebocoran data (Kaufman dkk., 2012), dan Orange (Demšar dkk., 2013) beserta entri Referensi; Latihan 3 dan 6 disesuaikan dengan dataset; butir kebocoran ditambahkan ke Kesimpulan; istilah dibakukan; tanda backtick dibersihkan. Berkas Tahap1 tidak diubah.
+- `catatan-tindak-lanjut.md` ditambahkan.
 
 ## 2026-11-18 — Penataan ulang folder mengikuti `ml-rekayasa-sipil`
 - `BabN_Paket/` dipecah menurut jenis berkas: notebook ke `notebooks/babNN/`, workflow Orange dan data ke `praktikum/babNN/`, ilustrasi SVG ke `gambar/babNN/`, README bab ke `praktikum/babNN/` (bab tanpa notebook ke `gambar/babNN/`). Nomor bab ditulis dua digit. Riwayat berkas dipertahankan (`git mv`).

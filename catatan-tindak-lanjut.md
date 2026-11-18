@@ -1,0 +1,20 @@
+# Catatan tindak lanjut
+
+Daftar hal yang belum selesai. Perbarui atau hapus butir yang sudah dikerjakan.
+
+## Bab 3 (diaudit 2026-11-18)
+
+| Butir | Status | Keterangan |
+|---|---|---|
+| Ambil ulang tangkapan layar Gambar 3.10 dan 3.11 | Menunggu (Ryan) | Tampilan lama memakai folder unggahan `Bab3_Paket/Data`. Ambil setelah struktur repositori final: jalankan P03A lalu P03B di Colab, tangkap sel yang memuat `pd.read_csv("praktikum/bab03/data_sintesis_beton.csv")` beserta panel Files (folder `praktikum/bab03`). Setelah itu hapus kalimat catatan tangkapan layar lama di paragraf pengantar kode (subbab 3.5.1). |
+| Padatkan pengulangan pesan kebocoran (muncul 5 kali), "pencilan bukan berarti kesalahan" (2 kali), dan pengelompokan citra saat membagi data (3 kali) | Disetujui, ditunda | Kerjakan setelah Bab 6 selesai agar rujukan silang sudah final. |
+| Uji workflow `Orange_Bab3.ows` di Orange 3.41 | Belum diuji | Hanya struktur XML yang diperiksa (5 widget, 4 tautan). Berkas tidak menyimpan jalur data. |
+| Terapkan istilah baku (pengamatan, rerata, simpangan baku, pelatihan/data uji, prapemrosesan, antarkelompok) ke Bab 1–2 dan Bab 4–15 | Belum | Bab 3 sudah diseragamkan. Tambahkan ke `gaya-selingkung.md`. |
+| Verifikasi akhir sitasi Bab 3 (DOI dan halaman) | Selesai 2026-11-18 | Rubin (1976), Little & Rubin (2019), Tukey (1977), Kraskov dkk. (2004), Demšar dkk. (2013), Kaufman dkk. (2012) dicocokkan dengan laman penerbit atau repositori resmi. Judul pada Referensi belum dicetak miring (mengikuti entri yang sudah ada). |
+
+## Seluruh buku
+
+- Sembilan CSV tidak identik saat dibangkitkan ulang (Bab 4 `data_sintesis_prioritas_jembatan.csv`, Bab 12, Bab 14, Bab 15). Tentukan apakah berkas di repositori atau hasil notebook yang menjadi acuan.
+- Duplikat `P04_data_sintesis_algoritma.ipynb` (hanya beda judul dan sel markdown dari P04A).
+- Keluaran notebook P04B, P06A, dan P07 masih memuat jalur lokal Windows.
+- Keputusan LICENSE dan LICENSE-DATA, serta apakah `book/` tetap di repositori.
