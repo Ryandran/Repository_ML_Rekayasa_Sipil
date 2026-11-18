@@ -46,7 +46,7 @@ Notebook, data sintetis, alur kerja Orange, dan ilustrasi pendamping buku ajar *
 pip install -r requirements.txt
 ```
 
-Orange Data Mining yang dipakai menyiapkan contoh adalah versi 3.41.0. Versi pustaka Python di Colab dapat berubah; periksa README bab bila hasil berbeda.
+Orange Data Mining yang dipakai menyiapkan contoh adalah versi 3.41.0. Versi pustaka Python di Colab dapat berubah; periksa README bab bila hasil berbeda. Angka model Bab 12, 14, dan 15 dibuat dengan scikit-learn ≤ 1.8; scikit-learn 1.9 memberi hasil Random Forest yang sedikit berbeda (hingga sekitar 0,06 pada R² per pembagian), sehingga `requirements.txt` membatasi versi di bawah 1.9.
 
 ## Data dan batas penggunaan
 
