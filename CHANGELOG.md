@@ -1,5 +1,11 @@
 # Catatan Perubahan
 
+## Naskah Tahap 34 (rilis `naskah-final`)
+
+- Format rujukan diseragamkan: titik akhir setelah DOI/URL dihapus, "doi:" diganti `https://doi.org/`, entri Friedman (2001) di Bab 4 dan Bab 7 disamakan, dan Ribeiro dkk. (2016) dilengkapi nama prosiding, halaman, dan DOI.
+- Sitasi baru untuk pernyataan yang sebelumnya tanpa sumber: Davies & Bouldin (1979) dan Caliński & Harabasz (1974) di Bab 5; Breiman (1996) untuk bagging dan Wolpert (1992) untuk stacking di Bab 9. Entri Referensi disisipkan menurut abjad.
+- Masih ditandai belum bersumber: PSI (Bab 13), kerangka delapan langkah (Bab 6), validasi spasial dan fusi multimodal (Bab 12), permutation importance dan group bootstrap (Bab 15), log loss (Bab 5).
+
 ## Notebook dapat dijalankan dari folder mana pun
 
 - Sel kecil "Folder kerja" ditambahkan di awal 26 notebook (semua yang memakai jalur `praktikum/...`; P17A dan P17C tidak memerlukannya). Sel itu mencari akar repositori dari folder kerja ke atas dan berpindah ke sana; bila tidak ditemukan (mis. sesi Colab tanpa clone), ia mencetak pesan dan perilaku lama tetap berlaku. Seluruh 29 notebook dijalankan ulang dari folder masing-masing tanpa kesalahan dan tanpa membuat folder `praktikum/` bersarang.
