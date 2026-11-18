@@ -1,5 +1,9 @@
 # Catatan Perubahan
 
+## Notebook dapat dijalankan dari folder mana pun
+
+- Sel kecil "Folder kerja" ditambahkan di awal 26 notebook (semua yang memakai jalur `praktikum/...`; P17A dan P17C tidak memerlukannya). Sel itu mencari akar repositori dari folder kerja ke atas dan berpindah ke sana; bila tidak ditemukan (mis. sesi Colab tanpa clone), ia mencetak pesan dan perilaku lama tetap berlaku. Seluruh 29 notebook dijalankan ulang dari folder masing-masing tanpa kesalahan dan tanpa membuat folder `praktikum/` bersarang.
+
 ## Audit menyeluruh naskah dan repositori (naskah Tahap 31–33)
 
 - **Naskah.** Bab 7 memperoleh rancangan dua pertemuan seperti Bab 4–6 (Tahap 31). Kata "ramal" diganti "prediksi" di enam tempat (Tahap 32). Tahap 33: label bagian diseragamkan ("Definisi penting" di semua bab; "Capaian pembelajaran" di Bab 11–12; "Kesimpulan" di Bab 11, 12, dan 14, dengan Bab 14 kini bernomor 14.19); tanda kutip lurus pada prosa Bab 16–17 diganti kutip tipografis; sitasi Naser (2023) dilengkapi tahun pada sebutan pertama di Bab 11; Bab 16 dan 17 memperoleh bagian Bacaan lanjut (tiga butir tiap bab, dari rujukan yang sudah ada). Rujukan tabel dan gambar diperiksa terprogram: 30 tabel bernomor dan 78 gambar, semua dirujuk sebelum muncul.

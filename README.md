@@ -42,7 +42,7 @@ Notebook, data sintetis, alur kerja Orange, dan ilustrasi pendamping buku ajar *
 3. Jalankan notebook analisis di Google Colab atau Python lokal.
 4. Untuk Orange, buka berkas `.ows` di `praktikum/babNN/`. Setelah repositori dipindahkan atau alur dibuka di komputer lain, pilih ulang dataset pada widget **File**.
 
-**Direktori kerja.** Semua bab: jalankan notebook dari akar repositori; data ditulis ke `praktikum/babNN/` (Bab 4–6: `praktikum/babNN/data_babN`). Di Colab atau folder lain, generator Bab 4–6 membuat `data_babN` di direktori kerja dan notebook analisisnya membacanya dari sana. Notebook Bab 7 mencari CSV Bab 6 di `praktikum/bab06/data_bab6/` dan di `data_bab6/`.
+**Direktori kerja.** Semua bab: notebook dapat dibuka dan dijalankan dari folder mana pun di dalam repositori, karena sel pertama berpindah ke akar repositori; data ditulis ke `praktikum/babNN/` (Bab 4–6: `praktikum/babNN/data_babN`). Di Colab atau folder lain, generator Bab 4–6 membuat `data_babN` di direktori kerja dan notebook analisisnya membacanya dari sana. Notebook Bab 7 mencari CSV Bab 6 di `praktikum/bab06/data_bab6/` dan di `data_bab6/`.
 
 ```bash
 pip install -r requirements.txt
