@@ -1,5 +1,12 @@
 # Catatan Perubahan
 
+## Repositori: lisensi dan folder book/
+
+- Ditambahkan `LICENSE` (MIT, untuk kode) dan `LICENSE-DATA.md` (CC BY 4.0, untuk data sintetis, alur kerja Orange, README bab, dan ilustrasi). Naskah buku tidak tercakup; hak cipta penulis.
+- `book/` kini hanya berisi satu naskah versi terbaru (Tahap 15); Tahap 4, 5, 6, 9, 12, 13, 14 dihapus dari folder (riwayat tetap di git).
+- README: peta bab memuat Bab 16 (pengantar deep learning) dan Bab 17 (computer vision) sebagai rencana; status halaman dan bagian lisensi diperbarui.
+- `catatan-tindak-lanjut.md`: keputusan lingkup dicatat.
+
 ## Notebook: keluaran tersimpan P08B, P09B, P09C
 
 - Ketiga notebook dijalankan dengan scikit-learn 1.8.0 dan keluarannya disimpan (sebelumnya kosong). Kode dan metadata kernel tidak diubah; CSV di `praktikum/` dikembalikan ke versi repositori.

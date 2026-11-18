@@ -6,14 +6,19 @@ Daftar hal yang belum selesai. Perbarui atau hapus butir yang sudah dikerjakan.
 
 Dasar: Tahap 15 memiliki 15 bab, 64 gambar (semua dirujuk), keluaran notebook segar (scikit-learn 1.8.0, PR #10 dan #12), dan istilah baku. Temuan yang belum selesai: daftar Referensi Bab 15 hanya berisi satu entri (Naser, 2023); sitasi Bab 5–15 belum diverifikasi dan Bab 4 masih punya algoritma tanpa sitasi (Naive Bayes, jaringan saraf, ANFIS, LSTM, GNN, transformer, fuzzy c-means); naskah 201 halaman (README menargetkan 250–300); README usang; belum ada `LICENSE`.
 
-**Keputusan Ryan (2026-11-18):** versi ini memuat **Kata Pengantar, Lampiran, Glosarium, dan satu bab computer vision**. Belum diputuskan: target jumlah halaman, lisensi kode dan data, serta apakah `book/` tetap di repositori.
+**Keputusan Ryan (2026-11-18):**
+- Versi ini memuat **Kata Pengantar, Lampiran, Glosarium, dan bab computer vision**.
+- **Target halaman:** 250–300 (sesuai README).
+- **Letak bab:** computer vision ditaruh **sesudah Bab 15**, didahului **satu bab pengantar deep learning**. Penomoran: **Bab 16 Pengantar deep learning**, **Bab 17 Computer vision**. Pengantar deep learning dikerjakan lebih dulu.
+- **Lisensi** (diputuskan Claude atas permintaan Ryan): kode MIT (`LICENSE`); data sintetis, alur kerja Orange, README bab, dan ilustrasi CC BY 4.0 (`LICENSE-DATA.md`); naskah buku hak cipta penulis karena direncanakan terbit melalui penerbit.
+- **`book/`:** hanya satu buku versi terbaru yang disimpan; versi lama dihapus dari folder (riwayat tetap di git). Bila ada kata kunci "versi akhir", berkas ini diganti, bukan ditambah.
 
 | Tahap | Isi | Status | Keluaran |
 |---|---|---|---|
-| A. Keputusan lingkup | Lingkup produk (selesai); target halaman, lisensi, status `book/` | Sebagian: tiga butir terbuka | Catatan di `gaya-selingkung.md` |
+| A. Keputusan lingkup | Lingkup produk, target halaman, lisensi, status `book/`, letak bab computer vision | Selesai (2026-11-18) | Catatan ini; `LICENSE`, `LICENSE-DATA.md` |
 | B. Integritas sumber | Audit sitasi Bab 5–15 per batch; isi Referensi Bab 15; tutup celah sitasi Bab 4. Sumber dicocokkan dengan laman penerbit; yang belum ketemu diberi `[perlu sumber]`, tidak dikarang | Belum | Naskah Tahap 16 + log verifikasi |
 | C. Konsistensi isi | Padatkan pengulangan di Bab 3 dan periksa pola serupa di bab lain; periksa batas "kita" (≤ 5 per bab) dan rujukan silang antarbab | Belum | Naskah Tahap 17 |
-| D. Kelengkapan produk | Kata Pengantar; Lampiran (mengikuti keputusan 27 di `gaya-selingkung.md`: Lampiran A–C, tabel A.1/B.1/C.1); Glosarium Indonesia–Inggris (keputusan 28); daftar tabel; bab computer vision | Belum | Naskah Tahap 18 |
+| D. Kelengkapan produk | Bab 16 Pengantar deep learning (lebih dulu), lalu Bab 17 Computer vision; Kata Pengantar; Lampiran (mengikuti keputusan 27 di `gaya-selingkung.md`: Lampiran A–C, tabel A.1/B.1/C.1); Glosarium Indonesia–Inggris (keputusan 28); daftar tabel; bab computer vision | Belum | Naskah Tahap 18 |
 | E. Penutupan | Sinkronkan README dan CHANGELOG, bersihkan catatan ini, buat PDF, tinjau tata letak, kirim ke pembaca sejawat, tag rilis draf | Belum | Tag `v0.x-draf` |
 
 Urutan: A lebih dulu; B dan C dapat jalan paralel; D menyusul; E terakhir.
@@ -23,7 +28,7 @@ Urutan: A lebih dulu; B dan C dapat jalan paralel; D menyusul; E terakhir.
 - Rancangan awal ada di dokumen proyek `claude/rancangan-bab-visi-komputer.md` dan `claude/notebook/P09_visi_komputer.ipynb` (lineage lama); dipakai sebagai acuan, bukan disalin mentah.
 - Isi minimal: dasar deteksi objek (YOLO), kasus APD pada konstruksi, evaluasi (mAP, precision, recall) dan pembagian data tanpa kebocoran antarframe/lokasi, serta batas penggunaan. Gambar 3.x (subbab 3.8, citra untuk computer vision) menjadi pengantar.
 - Data: hanya data sintetis atau data milik sendiri. Data jalan RDD Hari Jalan 2023 milik tim Ryan boleh dipertimbangkan; ikuti `claude/rdd23/README_RDD23_bersih.md` dan pastikan tidak ada identitas pribadi di citra.
-- Bab baru menambah: notebook `PxxA` (pembangkit) dan `PxxB` (analisis), folder `praktikum/` dan `gambar/`, rujukan silang dari Bab 3, 5, 12, dan 13, serta entri Glosarium. Penomoran bab perlu diputuskan lebih dulu (menyisip menggeser Bab 10–15 atau ditaruh sebagai bab berikutnya setelah Bab 15) dan gambar diurutkan ulang.
+- Bab 17 menambah: notebook `PxxA` (pembangkit) dan `PxxB` (analisis), folder `praktikum/` dan `gambar/`, rujukan silang dari Bab 3, 5, 12, dan 13, serta entri Glosarium. Bab 16 (pengantar deep learning) menjadi prasyarat: arsitektur jaringan, pelatihan, regularisasi, dan jaringan konvolusi diperkenalkan di sana lebih dulu agar Bab 17 tidak memperkenalkannya sambil lalu.
 - Sitasi bab ini harus diverifikasi sebelum dimasukkan; tidak ada rujukan yang dikarang.
 
 ### Risiko
