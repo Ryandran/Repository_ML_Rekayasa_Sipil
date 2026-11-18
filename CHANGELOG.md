@@ -1,5 +1,9 @@
 # Catatan Perubahan
 
+## 2026-11-18 — P15A: pencarian data Bab 14/15
+- Audit asal-usul 36 CSV/`.tab`: semua berasal dari notebook penulisnya, kecuali `praktikum/bab15/slope_campaign_synthetic.csv` yang berupa salinan manual dari keluaran P14A (byte-identik).
+- P15A kini mencari `slope_campaign_synthetic.csv` di `praktikum/bab15/`, `praktikum/bab14/`, lalu direktori kerja, dengan pesan galat berbahasa Indonesia. Logika dan keluaran notebook tidak berubah.
+
 ## 2026-11-18 — Penyelidikan CSV Bab 12/14/15
 - Delapan CSV yang tidak identik ditelusuri: berkas data hanya berbeda pada digit terakhir (versi numpy); berkas metrik model berbeda karena scikit-learn 1.9 mengubah hasil Random Forest. Dengan scikit-learn 1.5.2–1.8.0 hasilnya sama dengan repositori dan naskah.
 - `requirements.txt`: `scikit-learn>=1.4,<1.9`. Catatan di README akar dan `catatan-tindak-lanjut.md`. CSV dan notebook tidak diubah.

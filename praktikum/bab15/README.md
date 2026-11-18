@@ -2,7 +2,7 @@
 
 > Letak berkas: notebook di [`notebooks/bab15/`](../../notebooks/bab15/), ilustrasi SVG di [`gambar/bab15/`](../../gambar/bab15/); workflow Orange dan data berada di folder ini.
 
-Jalankan P14A generator terlebih dahulu bila ingin membangun ulang data; paket ini juga membawa salinan CSV sintesis Bab 14 untuk reproduksi mandiri. P15A memakai Python/sklearn untuk audit kelompok dan menghasilkan keluaran prediksi/residual untuk Orange.
+Jalankan P14A generator terlebih dahulu bila ingin membangun ulang data; paket ini juga membawa salinan CSV sintesis Bab 14 (`slope_campaign_synthetic.csv`, byte-identik dengan keluaran P14A) untuk reproduksi mandiri. P15A mencari berkas itu di `praktikum/bab15/`, lalu `praktikum/bab14/`, lalu direktori kerja. P15A memakai Python/sklearn untuk audit kelompok dan menghasilkan keluaran prediksi/residual untuk Orange.
 
 ## Urutan
 1. Buka `Orange_Bab15_Audit_Hasil.ows`, pilih `praktikum/bab15/P15_holdout_orange.tab` di File. Gunakan Data Table, Distributions, Scatter Plot untuk memeriksa aktual, prediksi, dan residual.
