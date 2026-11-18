@@ -2,13 +2,13 @@
 
 Notebook, data sintetis, alur kerja Orange, dan ilustrasi pendamping buku ajar *Machine Learning untuk Rekayasa Sipil* (Program Magister Teknik Sipil).
 
-> **Status: draf, belum dirilis.** Isi repositori masih bisa berubah mengikuti penyusunan buku. PDF kerja saat ini 174 halaman; sasaran 250–300 halaman belum tercapai, dan verifikasi seluruh sumber serta klaim belum selesai.
+> **Status: draf, belum dirilis.** Isi repositori masih bisa berubah mengikuti penyusunan buku. Naskah kerja saat ini (Tahap 16) 209 halaman; sasaran 250–300 halaman akan dicapai dengan Bab 17, Kata Pengantar, Lampiran, dan Glosarium. Verifikasi seluruh sumber dan klaim belum selesai.
 
 ## Isi
 
 | Folder | Isi |
 |---|---|
-| `book/` | Naskah induk (`naskah-induk.docx`, `naskah-induk.pdf`) dan hasil suntingan bahasa (`Buku_Ajar_ML_Rekayasa_Sipil_Suntingan_Bahasa_Tahap1.docx`) |
+| `book/` | Satu berkas naskah versi terbaru (`Buku_Ajar_ML_Rekayasa_Sipil_Suntingan_Bahasa_TahapNN.docx`); versi sebelumnya tidak disimpan di folder ini (riwayat ada di git) |
 | `notebooks/babNN/` | Notebook Python per bab. Notebook berawalan `PxxA` adalah pembangkit data sintetis; `PxxB` dan seterusnya adalah analisisnya |
 | `praktikum/babNN/` | Alur kerja Orange (`.ows`), data latihan (`.csv`, `.tab`), dan `README.md` bab berisi urutan langkah serta catatan interpretasi |
 | `gambar/babNN/` | Ilustrasi vektor (SVG) pendamping naskah |
@@ -32,6 +32,8 @@ Notebook, data sintetis, alur kerja Orange, dan ilustrasi pendamping buku ajar *
 | 13 | Implementasi, pemantauan, dan tata kelola | ✔ | ✔ | ✔ |
 | 14 | Studio riset I: pertanyaan, data, dan desain | ✔ | ✔ | ✔ |
 | 15 | Studio riset II: validasi, pelaporan, dan klaim | ✔ | ✔ | ✔ |
+| 16 | Pengantar deep learning | ✔ | ✔ | ✔ |
+| 17 | Computer vision *(direncanakan; sesudah Bab 16)* | | | |
 
 ## Cara memakai
 
@@ -54,8 +56,12 @@ Dataset latihan dibuat secara sintetis untuk menjelaskan alur analisis dan mengu
 
 ## Sitasi dan lisensi
 
-Rujukan akademik dicantumkan pada naskah induk dan/atau README bab terkait. PDF sumber buku Wiley yang menjadi bahan telaah tidak disertakan.
+Rujukan akademik dicantumkan pada naskah dan/atau README bab terkait. PDF sumber buku Wiley yang menjadi bahan telaah tidak disertakan.
 
-**Lisensi belum ditetapkan.** Sebelum repositori dipublikasikan, tentukan izin penggunaan untuk naskah, notebook, ilustrasi, dan dataset (repositori `ml-rekayasa-sipil` memisahkan kode dan data dalam `LICENSE` dan `LICENSE-DATA.md`). Tanpa berkas lisensi, pengguna tidak seharusnya menganggap ada izin menggunakan ulang atau mendistribusikan materi.
+| Bagian | Lisensi |
+|---|---|
+| Kode (notebook `.ipynb`, skrip `skrip/`) | MIT, lihat `LICENSE` |
+| Data sintetis, alur kerja Orange, README bab, dan ilustrasi | CC BY 4.0, lihat `LICENSE-DATA.md` |
+| Naskah buku (`book/`) | Hak cipta penulis, seluruh hak dilindungi (direncanakan terbit melalui penerbit) |
 
 Perubahan dicatat di `CHANGELOG.md`.
