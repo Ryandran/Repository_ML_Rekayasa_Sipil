@@ -5,9 +5,9 @@
 Dataset dibangkitkan oleh P03A dengan seed 30303, 1.200 campuran virtual, dan 10 kolom. Persamaan target hanya DGP pedagogis: bukan hasil uji, basis desain campuran, representasi mutu lapangan, atau bukti kausal.
 
 ## Urutan kerja
-1. Jalankan `P03A_generator_data_sintesis_beton.ipynb` di Google Colab atau Python lokal. Hasilnya ditulis ke `Data/`.
-2. Buka `Orange_Bab3.ows` pada Orange 3.41.0. Pilih `praktikum/bab03/data_sintesis_beton_orange.tab` di widget File. Hubungkan tersedia: Data Table, Distributions, Scatter Plot, Correlations.
-3. Jalankan `P03B_audit_eksplorasi_data.ipynb` dari root proyek untuk audit skema, rentang, ringkasan, korelasi dan contoh diagnosis sementara.
+1. Jalankan `P03A_generator_data_sintesis_beton.ipynb` di Google Colab atau Python lokal. Hasilnya (`data_sintesis_beton.csv` dan `data_sintesis_beton_orange.tab`) ditulis ke `praktikum/bab03/` relatif terhadap folder kerja. Di Colab folder kerjanya `/content`; unduh kedua berkas itu bila akan dibuka di Orange.
+2. Buka `Orange_Bab3.ows` pada Orange 3.41.0. Berkas workflow tidak menyimpan jalur data, jadi pilih sendiri berkasnya di widget File: `data_sintesis_beton_orange.tab` (id_spesimen sudah ditetapkan sebagai metadata dan kuat_tekan_MPa sebagai target) atau `data_sintesis_beton.csv`. Workflow sudah menghubungkan File ke Data Table, Distributions, Scatter Plot, dan Correlations.
+3. Jalankan `P03B_audit_eksplorasi_data.ipynb` dari root proyek untuk audit skema, rentang, ringkasan, toleransi pembulatan rasio, korelasi Pearson/Spearman, mutual information, dan latihan diagnosis pada salinan rusak sementara (nilai hilang, duplikasi, pencilan dengan aturan IQR). Di Colab, jalankan P03A dan P03B pada sesi yang sama.
 
 ## Peringatan interpretasi
 ID spesimen adalah metadata, bukan fitur. Rasio air-semen diturunkan dari air dan semen; tiga kolom ini berkaitan secara matematis. Korelasi terhadap target hanya menggambarkan generator yang diketahui. Salinan rusak untuk latihan dibuat dalam memori dan tidak menimpa CSV sumber.
