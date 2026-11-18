@@ -1,5 +1,12 @@
 # Catatan Perubahan
 
+## Naskah Tahap 9 (book/)
+
+- Tahap 7: Gambar 3.10–3.11 (rendering netral gaya notebook dari kode di naskah, bukan tangkapan layar Colab asli) dan satu kalimat versi scikit-learn di Bab 12, 14, 15.
+- Tahap 8: istilah baku Bab 5–6.
+- Tahap 9: konsolidasi pesan kebocoran data yang berulang (Bab 3–6) menjadi satu penjelasan kanonik (subbab 3.4, 4.4, 6.4) dengan rujukan silang; 8 paragraf berubah.
+- Istilah baku Bab 7–15 belum dikerjakan.
+
 ## 2026-11-18 — P15A: pencarian data Bab 14/15
 - Audit asal-usul 36 CSV/`.tab`: semua berasal dari notebook penulisnya, kecuali `praktikum/bab15/slope_campaign_synthetic.csv` yang berupa salinan manual dari keluaran P14A (byte-identik).
 - P15A kini mencari `slope_campaign_synthetic.csv` di `praktikum/bab15/`, `praktikum/bab14/`, lalu direktori kerja, dengan pesan galat berbahasa Indonesia. Logika dan keluaran notebook tidak berubah.
