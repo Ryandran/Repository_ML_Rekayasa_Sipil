@@ -1,5 +1,11 @@
 # Catatan Perubahan
 
+## Kata Pengantar, Lampiran A–C, dan Glosarium (naskah Tahap 18)
+
+- Naskah menjadi 231 halaman (dari 220): Kata Pengantar (sebelum Daftar Isi), Lampiran A (panduan instalasi dan lingkungan; Tabel A.1–A.3), Lampiran B (katalog dataset sintesis menurut bab dengan ukuran dan seed, dataset citra terbuka, kerangka katalog dataset; Tabel B.1–B.3; 6 referensi), dan Lampiran C (glosarium 69 istilah Indonesia–Inggris dengan bab utama; Tabel C.1). Ukuran dan seed dibaca dari berkas dan notebook di repositori.
+- Perbaikan pada naskah yang ada: entri Daftar Isi 1.8 disamakan dengan judul subbab; subbab 1.11 menyebut Bab 16–17 dan tiga lampiran, dengan satu baris tambahan pada tabel peta tahap; sel lisensi RDD2022 di Bab 17 diselaraskan dengan Lampiran B (CC BY-SA 4.0 menurut README repositori resmi).
+- Belum dikerjakan: Daftar Tabel (judul tabel di naskah belum seragam), audit sitasi Bab 5–15, pemadatan Bab 3, penomoran daftar di bab lama. Sasaran 250–300 halaman belum tercapai.
+
 ## Bab 17 Computer vision (naskah Tahap 17)
 
 - Bab baru setelah Bab 16 (11 subbab, 8 gambar, tabel, Definisi, Blueprint, 9 latihan, 12 referensi; naskah menjadi 220 halaman). Naskah dibagikan lewat Releases GitHub (bukan di repositori).
