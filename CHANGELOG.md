@@ -1,5 +1,11 @@
 # Catatan Perubahan
 
+## Penomoran tabel dan Daftar Tabel (naskah Tahap 20)
+
+- Aturan: hanya tabel yang dirujuk naskah yang diberi nomor dan judul (`Tabel n.m  Judul`). Tabel lain tetap tanpa nomor. Ada 19 tabel isi (Bab 2: 2.1–2.2; Bab 3: 3.1–3.5; Bab 4: 4.1–4.2; Bab 5: 5.1; Bab 7: 7.1–7.4; Bab 9: 9.1–9.2; Bab 10: 10.1–10.3) ditambah 7 tabel lampiran (A.1–C.1).
+- Rujukan lama di Bab 5 (5.3→5.1) dan Bab 7 (7.3→7.1, 7.1→7.2, 7.4→7.3, 7.5→7.4) disesuaikan dengan urutan baru. Setiap tabel dirujuk sebelum muncul; 10 kalimat rujukan ditambahkan. Isi tabel tidak diubah.
+- Daftar Tabel (26 entri) ditambahkan setelah Daftar Gambar. Naskah menjadi 233 halaman.
+
 ## Kata Pengantar, Lampiran A–C, dan Glosarium (naskah Tahap 18)
 
 - Naskah menjadi 231 halaman (dari 220): Kata Pengantar (sebelum Daftar Isi), Lampiran A (panduan instalasi dan lingkungan; Tabel A.1–A.3), Lampiran B (katalog dataset sintesis menurut bab dengan ukuran dan seed, dataset citra terbuka, kerangka katalog dataset; Tabel B.1–B.3; 6 referensi), dan Lampiran C (glosarium 69 istilah Indonesia–Inggris dengan bab utama; Tabel C.1). Ukuran dan seed dibaca dari berkas dan notebook di repositori.
