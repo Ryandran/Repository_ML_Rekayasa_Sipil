@@ -1,5 +1,13 @@
 # Catatan Perubahan
 
+## Naskah Tahap 14 (book/)
+
+- Dua belas gambar keluaran notebook (dirender netral dari sel yang dijalankan ulang dengan scikit-learn 1.8): Gambar 4.3; 5.4–5.5; 6.4–6.6; 7.2–7.5 (permutation importance, PDP/ICE, kasus lokal, pohon surrogate); 10.1 (P10B); 12.3 (P12B). Berkas di `gambar/babNN/`; perender di `skrip/render_keluaran_notebook.py`.
+- Gambar augmentasi (dulu 9.2, di akhir bab sesudah Latihan) dipindah ke subbab 9.1.2 dan menjadi Gambar 9.1; Gambar Orange menjadi 9.2. Kalimat rujukan ditambahkan.
+- Nomor gambar per bab diurutkan ulang menurut kemunculan; Daftar Gambar disusun ulang.
+- Catatan: keluaran yang tersimpan di notebook P05 (sel 4) dan P07 (sel 11) sedikit berbeda dari hasil jalan ulang (mis. P07 fidelity R² 0,617 tersimpan vs 0,616 segar, sama dengan naskah). Gambar memakai hasil jalan ulang. Notebook di repositori belum disegarkan.
+- Catatan: 24 gambar lama (mis. 1.1–3.9, 5.1–5.2, 7.1, 11.1–15.1) belum punya kalimat rujukan di teks.
+
 ## Naskah Tahap 13 (book/)
 
 - Sepuluh tangkapan layar Orange 3.41.0 disisipkan dengan data sintesis dari repositori: Gambar 4.2, 5.3, 6.3 (alur kerja + Test and Score), 7.2 (alur kerja + Rank), serta 8.2, 9.1, 12.2, 13.2, 14.2, 15.2 (Distributions + Scatter Plot). Berkas gambar ada di `gambar/babNN/`; skrip pengambilnya `skrip/tangkap_orange.py`.
