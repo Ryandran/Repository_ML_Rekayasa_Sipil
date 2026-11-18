@@ -1,8 +1,16 @@
 # Catatan Perubahan
 
+## Bab 17 Computer vision (naskah Tahap 17)
+
+- Bab baru setelah Bab 16 (11 subbab, 8 gambar, tabel, Definisi, Blueprint, 9 latihan, 12 referensi; naskah menjadi 220 halaman). Naskah dibagikan lewat Releases GitHub (bukan di repositori).
+- Notebook P17A (detektor jendela geser, IoU, NMS, AP pada adegan sintesis), P17B (transfer learning: CNN kecil, ResNet-18 fitur beku/setel halus/dari nol pada 60/240/1.000 citra; uji ketahanan kontras, derau, blur), P17C (aturan kepatuhan APD di atas keluaran detektor simulasi) beserta `praktikum/bab17/README.md`. Gambar konseptual oleh `skrip/gambar_konseptual_bab17.py`.
+- Hasil utama (semua sintesis): AP@IoU 0,5 = 0,271 pada P17A (0,314 ± 0,059 lintas 5 benih); fitur beku + regresi logistik 0,860 vs CNN kecil 0,540 pada 60 citra; augmentasi menaikkan akurasi pada kondisi terdegradasi namun menurunkannya pada citra bersih; ambang menurut rasio biaya 5:1 = 0,42.
+- Catatan: P17B tidak sepenuhnya deterministik pada CPU (konvolusi multi-thread); angka dapat bergeser beberapa poin antarpelarian.
+- `requirements.txt`: torchvision ditambahkan pada catatan opsional PyTorch.
+
 ## Folder book/ dikeluarkan dari repositori
 
-- Atas keputusan penulis, `book/` dihapus; naskah versi akhir (DOCX dan PDF, Tahap 16) dibagikan lewat Releases GitHub. Riwayat naskah lama tetap tersimpan di riwayat git.
+- Atas keputusan penulis, `book/` dihapus; naskah versi akhir (DOCX dan PDF, Tahap 16; kini Tahap 17) dibagikan lewat Releases GitHub. Riwayat naskah lama tetap tersimpan di riwayat git.
 
 ## Bab 16 Pengantar deep learning (naskah Tahap 16)
 

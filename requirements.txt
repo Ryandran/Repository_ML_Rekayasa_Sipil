@@ -3,7 +3,7 @@ pandas
 scipy
 scikit-learn>=1.4,<1.9  # root_mean_squared_error (P04B); angka Bab 12/14/15 dibuat dengan versi ≤ 1.8
 matplotlib
-# Bab 16 (opsional): pip install torch --index-url https://download.pytorch.org/whl/cpu
+# Bab 16–17 (opsional): pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 # Explainability, Bab 7
 shap
 lime
