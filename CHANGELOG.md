@@ -1,5 +1,14 @@
 # Catatan Perubahan
 
+## Naskah Tahap 13 (book/)
+
+- Sepuluh tangkapan layar Orange 3.41.0 disisipkan dengan data sintesis dari repositori: Gambar 4.2, 5.3, 6.3 (alur kerja + Test and Score), 7.2 (alur kerja + Rank), serta 8.2, 9.1, 12.2, 13.2, 14.2, 15.2 (Distributions + Scatter Plot). Berkas gambar ada di `gambar/babNN/`; skrip pengambilnya `skrip/tangkap_orange.py`.
+- Bab 10 dan 11 tidak memuat langkah Orange di teks, sehingga tidak diberi gambar.
+- Gambar 9.1 lama menjadi Gambar 9.2 (urutan gambar dalam Bab 9).
+- Daftar Gambar dilengkapi (Gambar 3.4–3.11 dan gambar baru) dan tiga entri yang rusak (10.1, 11.1, 15.1) diperbaiki.
+- Penanda (bookmark) ganda pada Gambar 3.4–3.11 dibuat unik.
+- Setiap kalimat rujukan memberi tahu bahwa angka Orange tidak untuk dibandingkan langsung dengan notebook Python.
+
 ## Naskah Tahap 9 (book/)
 
 - Tahap 7: Gambar 3.10–3.11 (rendering netral gaya notebook dari kode di naskah, bukan tangkapan layar Colab asli) dan satu kalimat versi scikit-learn di Bab 12, 14, 15.
