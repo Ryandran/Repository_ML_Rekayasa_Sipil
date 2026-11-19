@@ -1,5 +1,10 @@
 # Catatan Perubahan
 
+## Notebook analisis dapat dibuka langsung di Colab
+
+- Pada 15 notebook analisis ditambahkan sel "Data untuk Colab" setelah sel "Folder kerja": bila berkas data tidak ditemukan (mis. notebook dibuka di tab atau runtime Colab baru), sel itu mengunduhnya dari repositori. Pada komputer dengan repositori hasil clone, atau bila hasil notebook pembangkit sudah ada, tidak ada yang diunduh. Pesan pada sel "Folder kerja" di Colab diperjelas, dan petunjuk "sesi yang sama" pada P03–P05 disesuaikan.
+- Seluruh 15 notebook diuji pada folder kosong (meniru Colab) dengan sumber unduhan dialihkan ke salinan lokal repositori: semua selesai tanpa galat.
+
 ## Naskah Tahap 35 (rilis `Penambahan_sumber_referensi`)
 
 - Sitasi baru: log loss (Hastie dkk., 2009) dan bootstrap berkelompok (Field & Welsh, 2007) di Bab 5; permutation importance (Breiman, 2001; Fisher dkk., 2019) di Bab 7; validasi spasial-temporal (Roberts dkk., 2017) dan strategi fusi multimodal (Baltrušaitis dkk., 2019) di Bab 12; PSI (Yurdakul & Naranjo, 2020) di Bab 13.
