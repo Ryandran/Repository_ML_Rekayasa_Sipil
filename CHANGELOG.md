@@ -1,5 +1,9 @@
 # Catatan Perubahan
 
+## P12B: pembanding rerata dan persistensi
+
+- Sel baru setelah ablation menghitung dua pembanding sederhana pada bridge holdout yang sama: rerata data latih (MAE 6,47) dan persistensi, yaitu kondisi saat ini sebagai prediksi (MAE 3,77; dengan selisih rerata latih 2,17). Model utama all modalities (MAE 5,19) mengalahkan rerata tetapi tidak mengalahkan persistensi; temuan ini dicatat terbuka. Data sintesis.
+
 ## Workflow Orange untuk audit batch (Bab 10)
 
 - `Orange_Bab10_Audit_Data.ows` ditambah widget Box Plot (kuat tekan menurut batch, dengan uji ANOVA) dan `gambar/bab10/Gambar_10_2_Orange_Audit_Batch.png`; README bab 10 memuat langkahnya, termasuk mengubah `batch_id` menjadi kategorikal pada File. `skrip/tangkap_orange.py` mendukung konfigurasi `box`.
