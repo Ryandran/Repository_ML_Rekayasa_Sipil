@@ -1,10 +1,15 @@
 # Catatan Perubahan
 
+## Naskah Tahap 35 (rilis `Penambahan_sumber_referensi`)
+
+- Sitasi baru: log loss (Hastie dkk., 2009) dan bootstrap berkelompok (Field & Welsh, 2007) di Bab 5; permutation importance (Breiman, 2001; Fisher dkk., 2019) di Bab 7; validasi spasial-temporal (Roberts dkk., 2017) dan strategi fusi multimodal (Baltrušaitis dkk., 2019) di Bab 12; PSI (Yurdakul & Naranjo, 2020) di Bab 13.
+- Urutan abjad daftar Referensi dirapikan di Bab 4, 7, 8, 10, 12, 13, dan 17 (124 entri).
+
 ## Naskah Tahap 34 (rilis `naskah-final`)
 
 - Format rujukan diseragamkan: titik akhir setelah DOI/URL dihapus, "doi:" diganti `https://doi.org/`, entri Friedman (2001) di Bab 4 dan Bab 7 disamakan, dan Ribeiro dkk. (2016) dilengkapi nama prosiding, halaman, dan DOI.
 - Sitasi baru untuk pernyataan yang sebelumnya tanpa sumber: Davies & Bouldin (1979) dan Caliński & Harabasz (1974) di Bab 5; Breiman (1996) untuk bagging dan Wolpert (1992) untuk stacking di Bab 9. Entri Referensi disisipkan menurut abjad.
-- Masih ditandai belum bersumber: PSI (Bab 13), kerangka delapan langkah (Bab 6), validasi spasial dan fusi multimodal (Bab 12), permutation importance dan group bootstrap (Bab 15), log loss (Bab 5).
+- Butir yang pada Tahap 34 masih tanpa sumber diselesaikan di Tahap 35 (lihat entri di bawah).
 
 ## Notebook dapat dijalankan dari folder mana pun
 

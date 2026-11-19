@@ -2,7 +2,7 @@
 
 Notebook, data sintetis, alur kerja Orange, dan ilustrasi pendamping buku ajar *Machine Learning untuk Rekayasa Sipil* (Program Magister Teknik Sipil).
 
-> **Status: naskah siap untuk review sejawat dan uji coba** (rilis `naskah-final`, Tahap 34). Naskah 244 halaman, memuat Kata Pengantar, Lampiran A–D, Glosarium, dan Daftar Tabel. Verifikasi sebagian sumber dan klaim masih berjalan; butir yang belum bersumber ditandai `[perlu sumber]` atau `[perlu verifikasi]` di naskah.
+> **Status: naskah siap untuk review sejawat dan uji coba** (rilis `Penambahan_sumber_referensi`, Tahap 35). Naskah 244 halaman, memuat Kata Pengantar, Lampiran A–D, Glosarium, dan Daftar Tabel. Verifikasi sebagian sumber dan klaim masih berjalan; butir yang belum bersumber ditandai `[perlu sumber]` atau `[perlu verifikasi]` di naskah.
 
 ## Isi
 
