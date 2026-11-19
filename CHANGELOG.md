@@ -1,5 +1,9 @@
 # Catatan Perubahan
 
+## Workflow Orange untuk audit batch (Bab 10)
+
+- `Orange_Bab10_Audit_Data.ows` ditambah widget Box Plot (kuat tekan menurut batch, dengan uji ANOVA) dan `gambar/bab10/Gambar_10_2_Orange_Audit_Batch.png`; README bab 10 memuat langkahnya, termasuk mengubah `batch_id` menjadi kategorikal pada File. `skrip/tangkap_orange.py` mendukung konfigurasi `box`.
+
 ## P04B: profil cluster dalam satuan asli
 
 - Ditambahkan sel dan penjelasan pada bagian clustering P04B yang menghitung rerata fitur per cluster dalam satuan asli (n, retak, alur, IRI, lalu lintas dalam juta) agar kelompok dapat diberi nama sementara yang bermakna bagi perkerasan, disertai peringatan bahwa data sintesis dibangkitkan dari gugus acak yang diskalakan, bukan dari proses fisik perkerasan.
