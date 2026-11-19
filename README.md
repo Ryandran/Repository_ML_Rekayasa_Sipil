@@ -44,6 +44,8 @@ Notebook, data sintetis, alur kerja Orange, dan ilustrasi pendamping buku ajar *
 
 **Direktori kerja.** Semua bab: notebook dapat dibuka dan dijalankan dari folder mana pun di dalam repositori, karena sel pertama berpindah ke akar repositori; data ditulis ke `praktikum/babNN/` (Bab 4–6: `praktikum/babNN/data_babN`). Di Colab atau folder lain, generator Bab 4–6 membuat `data_babN` di direktori kerja dan notebook analisisnya membacanya dari sana. Notebook Bab 7 mencari CSV Bab 6 di `praktikum/bab06/data_bab6/` dan di `data_bab6/`.
 
+**Google Colab.** Setiap notebook yang dibuka di tab baru berjalan di runtime baru yang kosong, sehingga data hasil notebook pembangkit (`A`) di tab lain tidak terlihat. Karena itu notebook analisis memiliki sel "Data untuk Colab" tepat setelah sel "Folder kerja": bila berkas data tidak ditemukan, sel itu mengunduhnya dari repositori ini (isinya setara, karena seed sama). Bila hasil pembangkit sudah ada di runtime yang sama, atau repositori sudah di-clone, tidak ada yang diunduh.
+
 ```bash
 pip install -r requirements.txt
 ```
