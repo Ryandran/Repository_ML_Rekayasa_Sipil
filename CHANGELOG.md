@@ -1,5 +1,9 @@
 # Catatan Perubahan
 
+## P04B: sel opsional pembanding Orange
+
+- Ditambahkan penjelasan dan sel opsional (validasi silang 5 lipatan dengan pengaturan bawaan Orange dan pengaturan notebook) pada P04B, agar selisih RMSE antara Orange (Gambar 4.2) dan notebook dapat dipisahkan menurut penyebabnya: skema validasi dan pengaturan model.
+
 ## Notebook analisis dapat dibuka langsung di Colab
 
 - Pada 15 notebook analisis ditambahkan sel "Data untuk Colab" setelah sel "Folder kerja": bila berkas data tidak ditemukan (mis. notebook dibuka di tab atau runtime Colab baru), sel itu mengunduhnya dari repositori. Pada komputer dengan repositori hasil clone, atau bila hasil notebook pembangkit sudah ada, tidak ada yang diunduh. Pesan pada sel "Folder kerja" di Colab diperjelas, dan petunjuk "sesi yang sama" pada P03–P05 disesuaikan.
