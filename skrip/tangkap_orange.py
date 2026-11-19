@@ -1,6 +1,6 @@
 """Mengambil tangkapan layar Orange (kanvas dan widget) dari berkas .ows tanpa layar fisik.
 
-Dipakai untuk Gambar 4.2, 5.3, 6.3, 7.2, 8.2, 9.1, 12.2, 13.2, 14.2, dan 15.2.
+Dipakai untuk Gambar 4.2, 5.3, 6.3, 7.2, 8.2, 9.1, 10.2, 12.2, 13.2, 14.2, dan 15.2.
 
 Prasyarat: orange3 3.41, PyQt5, PyQtWebEngine, dan Xvfb.
 Contoh (dari akar repositori):
@@ -68,6 +68,10 @@ class M(OMain):
                         dom=w.data.domain; allv={v.name:v for v in list(dom.variables)+list(dom.metas)}
                         x,y,c=CFG['scat']; w.attr_x=allv[x]; w.attr_y=allv[y]; w.attr_changed()
                         if c: w.attr_color=allv[c]; w.attr_changed()
+                    if n.title=='Box Plot' and 'box' in CFG:
+                        dom=w.dataset.domain; allv={v.name:v for v in list(dom.variables)+list(dom.metas)}
+                        a,g=CFG['box']; w.attribute=allv[a]; w.group_var=allv[g] if g else None
+                        w._set_list_view_selections(); w._variables_changed(w.apply_attr_sorting)
                     if n.title=='Pivot Table' and 'pivot' in CFG:
                         dom=w.data.domain; allv={v.name:v for v in list(dom.variables)+list(dom.metas)}
                         r,c=CFG['pivot']; w.row_feature=allv[r]; w.col_feature=allv[c]; w._OWPivot__feature_changed()
