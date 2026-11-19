@@ -1,5 +1,9 @@
 # Catatan Perubahan
 
+## P04B: profil cluster dalam satuan asli
+
+- Ditambahkan sel dan penjelasan pada bagian clustering P04B yang menghitung rerata fitur per cluster dalam satuan asli (n, retak, alur, IRI, lalu lintas dalam juta) agar kelompok dapat diberi nama sementara yang bermakna bagi perkerasan, disertai peringatan bahwa data sintesis dibangkitkan dari gugus acak yang diskalakan, bukan dari proses fisik perkerasan.
+
 ## Workflow Orange untuk clustering dan anomali (Bab 4)
 
 - Ditambahkan `Orange_Bab4_Clustering.ows` dan `Orange_Bab4_Anomali.ows` beserta gambar tangkapan layar (`gambar/bab04/Gambar_4_Orange_clustering.png`, `Gambar_4_Orange_anomali.png`) dan langkah pemakaian pada README Bab 4. Angkanya dicocokkan dengan P04B: silhouette 0,603 pada k = 4, ARI k-means 0,99 (3 dari 800 segmen berbeda dari mayoritas label), dan Isolation Forest 3% menandai 21 baris (13 lonjakan generator, 8 tanda lain).
