@@ -1,5 +1,9 @@
 # Catatan Perubahan
 
+## P04B: residual menurut kelompok
+
+- Ditambahkan sel dan penjelasan pada P04B bagian 3 yang merinci residual data uji menurut umur beton dan menurut tiga kelompok rasio air-semen untuk model linear dan gradient boosting, sebagai pendamping contoh kerja memilih keluarga model di Bab 4. Pada data sintesis ini, residual model linear berganti tanda menurut umur, sedangkan gradient boosting tidak.
+
 ## P04B: sel opsional pembanding Orange
 
 - Ditambahkan penjelasan dan sel opsional (validasi silang 5 lipatan dengan pengaturan bawaan Orange dan pengaturan notebook) pada P04B, agar selisih RMSE antara Orange (Gambar 4.2) dan notebook dapat dipisahkan menurut penyebabnya: skema validasi dan pengaturan model.
