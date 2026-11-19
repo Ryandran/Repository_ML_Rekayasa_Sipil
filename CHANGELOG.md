@@ -1,5 +1,9 @@
 # Catatan Perubahan
 
+## Gambar keluaran residual P04B
+
+- Ditambahkan `gambar/bab04/Gambar_4_Notebook_P04B_residual_kelompok.png` (keluaran sel residual menurut kelompok pada P04B) untuk naskah Bab 4. Penomoran gambar di naskah bergeser: gambar clustering menjadi 4.5 dan gambar anomali menjadi 4.6.
+
 ## P04B: residual menurut kelompok
 
 - Ditambahkan sel dan penjelasan pada P04B bagian 3 yang merinci residual data uji menurut umur beton dan menurut tiga kelompok rasio air-semen untuk model linear dan gradient boosting, sebagai pendamping contoh kerja memilih keluarga model di Bab 4. Pada data sintesis ini, residual model linear berganti tanda menurut umur, sedangkan gradient boosting tidak.
