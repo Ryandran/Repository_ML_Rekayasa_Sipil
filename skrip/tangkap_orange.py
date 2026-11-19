@@ -30,6 +30,15 @@ def prep():
     mv=[v for v in allv if v.name in metas]
     attrs=[v for v in allv if v not in cv and v not in mv]
     nt=Table.from_table(Domain(attrs,cv[0] if cv else None,mv),t)
+    for nm in CFG.get('categorical',[]):
+        # kolom numerik berkode (mis. label_pembangkit 0-3) dijadikan kategorikal, setara mengubah tipe kolom pada widget File
+        import numpy as np
+        from Orange.data import DiscreteVariable
+        v=[m for m in nt.domain.metas if m.name==nm][0]; j=list(nt.domain.metas).index(v)
+        vals=sorted({str(int(x)) for x in nt.metas[:,j]}); dv=DiscreteVariable(nm,values=tuple(vals))
+        meta2=[dv if m is v else m for m in nt.domain.metas]; M=nt.metas.copy().astype(object)
+        M[:,j]=[vals.index(str(int(x))) for x in nt.metas[:,j]]
+        nt=Table.from_numpy(Domain(nt.domain.attributes,nt.domain.class_vars,meta2),nt.X,nt.Y if nt.Y.size else None,M)
     p=f'/tmp/shots/_{os.path.basename(data)[:-4]}.tab'; nt.save(p); return p
 class M(OMain):
     def setup_application(self):
@@ -45,7 +54,6 @@ class M(OMain):
             for _ in range(40): app.processEvents(); time.sleep(0.2)
             time.sleep(6)
             for _ in range(40): app.processEvents(); time.sleep(0.2)
-            (doc.view().scene().clearSelection(), app.processEvents(), doc.view().grab())[-1].save(f'{out}/canvas.png')
             def V(w,name):
                 return None if not name else w.data.domain[name] if hasattr(w,'data') and w.data is not None and name in w.data.domain else None
             for n in sch.nodes:
@@ -60,11 +68,16 @@ class M(OMain):
                         dom=w.data.domain; allv={v.name:v for v in list(dom.variables)+list(dom.metas)}
                         x,y,c=CFG['scat']; w.attr_x=allv[x]; w.attr_y=allv[y]; w.attr_changed()
                         if c: w.attr_color=allv[c]; w.attr_changed()
+                    if n.title=='Pivot Table' and 'pivot' in CFG:
+                        dom=w.data.domain; allv={v.name:v for v in list(dom.variables)+list(dom.metas)}
+                        r,c=CFG['pivot']; w.row_feature=allv[r]; w.col_feature=allv[c]; w._OWPivot__feature_changed()
                 except Exception as e:
                     print('cfg gagal',n.title,e,flush=True)
             for _ in range(30): app.processEvents(); time.sleep(0.1)
+            (doc.view().scene().clearSelection(), app.processEvents(), doc.view().grab())[-1].save(f'{out}/canvas.png')
             for i,n in enumerate(sch.nodes):
                 w=sch.widget_for_node(n); w.show()
+                if n.title in CFG.get('resize',{}): w.resize(*CFG['resize'][n.title]); app.processEvents()
                 for _ in range(30): app.processEvents(); time.sleep(0.1)
                 time.sleep(2); app.processEvents()
                 w.grab().save(f'{out}/{i:02d}_{re.sub(r"\W+","_",n.title)}.png')

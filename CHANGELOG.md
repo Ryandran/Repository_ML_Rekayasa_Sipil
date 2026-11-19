@@ -1,5 +1,10 @@
 # Catatan Perubahan
 
+## Workflow Orange untuk clustering dan anomali (Bab 4)
+
+- Ditambahkan `Orange_Bab4_Clustering.ows` dan `Orange_Bab4_Anomali.ows` beserta gambar tangkapan layar (`gambar/bab04/Gambar_4_Orange_clustering.png`, `Gambar_4_Orange_anomali.png`) dan langkah pemakaian pada README Bab 4. Angkanya dicocokkan dengan P04B: silhouette 0,603 pada k = 4, ARI k-means 0,99 (3 dari 800 segmen berbeda dari mayoritas label), dan Isolation Forest 3% menandai 21 baris (13 lonjakan generator, 8 tanda lain).
+- `skrip/tangkap_orange.py`: ditambahkan konfigurasi `pivot`, `categorical`, dan `resize`; tangkapan kanvas kini diambil setelah konfigurasi widget.
+
 ## Gambar keluaran residual P04B
 
 - Ditambahkan `gambar/bab04/Gambar_4_Notebook_P04B_residual_kelompok.png` (keluaran sel residual menurut kelompok pada P04B) untuk naskah Bab 4. Penomoran gambar di naskah bergeser: gambar clustering menjadi 4.5 dan gambar anomali menjadi 4.6.
