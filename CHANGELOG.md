@@ -1,5 +1,12 @@
 # Catatan Perubahan
 
+## Naskah Tahap 43–46 (rilis `Naskah_pasca_uji`)
+
+- Pola pembahasan keluaran diterapkan pada Bab 3–15: setiap keluaran notebook atau Orange dibahas dengan tautan ke blok dan gambar, pembacaan angka, makna dalam konteks rekayasa sipil, padanan Orange bila bermakna, dan catatan bahwa data bersifat sintesis. Bab 16 dan 17 sudah memuat pembahasan serupa dan tidak diubah.
+- Temuan yang dilaporkan apa adanya: akurasi 93,7% di bawah baseline 96,0% (Bab 5); model tidak mengalahkan persistensi (Bab 12); peringatan PSI tanpa penurunan Brier (Bab 13); R² negatif pada group holdout (Bab 14); R² rerata −0,322 pada 12 group holdout dan selisih bootstrap yang mencakup nol (Bab 15).
+- Gambar 10.2 baru (Orange Box Plot batch); gambar lama menjadi 10.3. Naskah menjadi 258 halaman.
+- Perubahan repositori terkait (PR #35–#37) tercatat pada entri di bawah: profil cluster P04B, workflow Orange Bab 10, dan pembanding persistensi P12B.
+
 ## P12B: pembanding rerata dan persistensi
 
 - Sel baru setelah ablation menghitung dua pembanding sederhana pada bridge holdout yang sama: rerata data latih (MAE 6,47) dan persistensi, yaitu kondisi saat ini sebagai prediksi (MAE 3,77; dengan selisih rerata latih 2,17). Model utama all modalities (MAE 5,19) mengalahkan rerata tetapi tidak mengalahkan persistensi; temuan ini dicatat terbuka. Data sintesis.
