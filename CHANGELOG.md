@@ -1,5 +1,9 @@
 # Catatan Perubahan
 
+## P07: peta metode penjelasan dalam satu gambar
+
+- Sel baru nomor 8 pada P07 menghasilkan `gambar/bab07/Gambar_7_x_Notebook_P07_peta_metode.png`: permutasi, PDP/ICE, SHAP (waterfall satu kasus), LIME, dan fidelity pohon surrogate pada satu Random Forest dan data Marshall sintesis yang sama. SHAP dan LIME dijalankan bila paketnya terpasang. Gambar ini melengkapi subbab 7.3 naskah (Tahap 48), yang sebelumnya hanya berisi teks dan Tabel 7.3.
+
 ## P06B: contoh pembagian kelompok per batch
 
 - Sel baru A.1 pada P06B (markdown dan kode) membandingkan pembagian acak dengan `GroupShuffleSplit` pada data kuat tekan sintesis Bab 10 (990 spesimen, sembilan batch): Ridge memberi MAE 3,507 MPa dan R² 0,779 pada split acak, dan MAE 3,956 MPa dan R² 0,728 ketika batch B02, B08, dan B09 ditahan utuh. Sel mengunduh data Bab 10 bila belum ada (Colab). Efek batch ditanam generator; tiga batch uji dan satu seed belum memberi taksiran stabil. Pendamping panduan "Bila benda uji berasal dari beberapa batch" di Bab 6 naskah (Tahap 47).
