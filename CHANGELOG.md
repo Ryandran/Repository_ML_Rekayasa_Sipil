@@ -1,5 +1,9 @@
 # Catatan Perubahan
 
+## P06B: contoh pembagian kelompok per batch
+
+- Sel baru A.1 pada P06B (markdown dan kode) membandingkan pembagian acak dengan `GroupShuffleSplit` pada data kuat tekan sintesis Bab 10 (990 spesimen, sembilan batch): Ridge memberi MAE 3,507 MPa dan R² 0,779 pada split acak, dan MAE 3,956 MPa dan R² 0,728 ketika batch B02, B08, dan B09 ditahan utuh. Sel mengunduh data Bab 10 bila belum ada (Colab). Efek batch ditanam generator; tiga batch uji dan satu seed belum memberi taksiran stabil. Pendamping panduan "Bila benda uji berasal dari beberapa batch" di Bab 6 naskah (Tahap 47).
+
 ## Naskah Tahap 43–46 (rilis `Naskah_pasca_uji`)
 
 - Pola pembahasan keluaran diterapkan pada Bab 3–15: setiap keluaran notebook atau Orange dibahas dengan tautan ke blok dan gambar, pembacaan angka, makna dalam konteks rekayasa sipil, padanan Orange bila bermakna, dan catatan bahwa data bersifat sintesis. Bab 16 dan 17 sudah memuat pembahasan serupa dan tidak diubah.
